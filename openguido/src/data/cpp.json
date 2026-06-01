@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Convert String To Lowercase",
+    "type": "code",
+    "tags": [
+      "lowercase string",
+      "string lower",
+      "tolower"
+    ],
+    "description": "Convert complete string to lowercase",
+    "language": "cpp",
+    "code": "for(char &c : s){\n    c = tolower(c);\n}"
+  },
+
+  {
+    "title": "Sort Vector Ascending",
+    "type": "code",
+    "tags": [
+      "sort vector",
+      "ascending sort"
+    ],
+    "description": "Sort vector in ascending order",
+    "language": "cpp",
+    "code": "sort(v.begin(), v.end());"
+  },
+
+  {
+    "title": "Sort Vector Descending",
+    "type": "code",
+    "tags": [
+      "descending sort",
+      "sort reverse"
+    ],
+    "description": "Sort vector in descending order",
+    "language": "cpp",
+    "code": "sort(v.begin(), v.end(), greater<int>());"
+  }
+]
