@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Hello World",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["hello world", "print"],
+    "description": "Basic hello world program",
+    "code": "#include <iostream>\nusing namespace std;\n\nint main(){\n    cout << \"Hello World\";\n}",
+    "explanation": "Basic C++ program."
+  },
+  {
+    "title": "Integer Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["int variable", "integer"],
+    "description": "Declare integer variable",
+    "code": "int x = 10;",
+    "explanation": "Stores integer values."
+  },
+  {
+    "title": "Double Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["double", "floating point"],
+    "description": "Declare double variable",
+    "code": "double pi = 3.14159;",
+    "explanation": "Stores floating point values."
+  },
+  {
+    "title": "Character Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["char", "character"],
+    "description": "Declare character variable",
+    "code": "char ch = 'A';",
+    "explanation": "Stores a single character."
+  },
+  {
+    "title": "String Declaration",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["string", "declare string"],
+    "description": "Declare string variable",
+    "code": "string s = \"OpenGuido\";",
+    "explanation": "Stores text data."
+  },
+  {
+    "title": "Input Integer",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["cin", "input integer"],
+    "description": "Read integer from input",
+    "code": "int n;\ncin >> n;",
+    "explanation": "Reads integer input."
+  },
+  {
+    "title": "Output Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["cout", "print variable"],
+    "description": "Print variable value",
+    "code": "cout << x << endl;",
+    "explanation": "Outputs value to console."
+  },
+  {
+    "title": "If Statement",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["if", "condition"],
+    "description": "Basic if statement",
+    "code": "if(x > 0){\n    cout << \"Positive\";\n}",
+    "explanation": "Executes code when condition is true."
+  },
+  {
+    "title": "For Loop",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["for loop", "iteration"],
+    "description": "Basic for loop",
+    "code": "for(int i = 0; i < n; i++){\n    cout << i << endl;\n}",
+    "explanation": "Repeats code multiple times."
+  },
+  {
+    "title": "While Loop",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["while loop"],
+    "description": "Basic while loop",
+    "code": "while(n > 0){\n    n--;\n}",
+    "explanation": "Repeats while condition is true."
+  }
+]

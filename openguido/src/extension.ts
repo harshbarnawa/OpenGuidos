@@ -26,9 +26,10 @@ export function activate(context: vscode.ExtensionContext) {
 
 			const selected = await vscode.window.showQuickPick(
 				results.map(snippet => ({
-					label: snippet.title,
-					description: snippet.description
-				}))
+    label: snippet.title,
+    description: snippet.description,
+    detail: `${snippet.language} • ${snippet.type}`
+}))
 			);
 
 			if (!selected) {
@@ -43,17 +44,28 @@ export function activate(context: vscode.ExtensionContext) {
 				return;
 			}
 
-			const action = await vscode.window.showQuickPick([
-    'Preview Snippet',
-    'Copy To Clipboard',
-    'Insert Into Editor'
-]);
+			const actions =
+    snippet.type === 'code'
+        ? [
+            'Preview Snippet',
+            'Copy To Clipboard',
+            'Insert Into Editor'
+        ]
+        : [
+            'Preview Command',
+            'Copy To Clipboard'
+        ];
+
+const action = await vscode.window.showQuickPick(
+    actions
+);
 
 if (!action) {
     return;
 }
 
-if (action === 'Preview Snippet') {
+if (action === 'Preview Snippet' ||
+    action === 'Preview Command') {
     vscode.window.showInformationMessage(
         snippet.code
     );
