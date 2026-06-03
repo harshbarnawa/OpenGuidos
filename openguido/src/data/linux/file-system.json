@@ -1,0 +1,564 @@
+[
+{
+  "title": "Print Working Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["pwd", "current directory"],
+  "description": "Show current directory",
+  "code": "pwd",
+  "explanation": "Displays the current working directory."
+},
+{
+  "title": "List Files",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["ls", "list files"],
+  "description": "List files and directories",
+  "code": "ls",
+  "explanation": "Shows files and folders in current directory."
+},
+{
+  "title": "List Files Detailed",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["ls -l", "detailed list"],
+  "description": "Detailed file listing",
+  "code": "ls -l",
+  "explanation": "Displays permissions, owner, size and date."
+},
+{
+  "title": "List Hidden Files",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["ls -a", "hidden files"],
+  "description": "Show hidden files",
+  "code": "ls -a",
+  "explanation": "Displays all files including hidden ones."
+},
+{
+  "title": "Change Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["cd", "change directory"],
+  "description": "Move into directory",
+  "code": "cd folder_name",
+  "explanation": "Changes current directory."
+},
+{
+  "title": "Go Back Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["cd ..", "parent directory"],
+  "description": "Move to parent directory",
+  "code": "cd ..",
+  "explanation": "Moves one level up."
+},
+{
+  "title": "Create Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["mkdir", "create folder"],
+  "description": "Create a directory",
+  "code": "mkdir myfolder",
+  "explanation": "Creates a new directory."
+},
+{
+  "title": "Create Nested Directories",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["mkdir -p", "nested folders"],
+  "description": "Create nested directories",
+  "code": "mkdir -p project/src/components",
+  "explanation": "Creates intermediate directories if needed."
+},
+{
+  "title": "Remove Empty Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["rmdir", "remove directory"],
+  "description": "Delete empty directory",
+  "code": "rmdir myfolder",
+  "explanation": "Removes an empty directory."
+},
+{
+  "title": "Remove Directory Recursive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["rm -r", "delete folder"],
+  "description": "Delete directory recursively",
+  "code": "rm -r myfolder",
+  "explanation": "Deletes directory and all contents."
+}
+
+
+,
+{
+  "title": "Create Empty File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["touch", "create file"],
+  "description": "Create an empty file",
+  "code": "touch file.txt",
+  "explanation": "Creates a new empty file."
+},
+{
+  "title": "Copy File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["cp", "copy file"],
+  "description": "Copy a file",
+  "code": "cp source.txt destination.txt",
+  "explanation": "Copies file contents to another file."
+},
+{
+  "title": "Copy Directory Recursive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["cp -r", "copy directory"],
+  "description": "Copy directory recursively",
+  "code": "cp -r project backup",
+  "explanation": "Copies a directory and all its contents."
+},
+{
+  "title": "Move File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["mv", "move file"],
+  "description": "Move file to another location",
+  "code": "mv file.txt /home/user/",
+  "explanation": "Moves a file to a different directory."
+},
+{
+  "title": "Rename File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["mv", "rename file"],
+  "description": "Rename a file",
+  "code": "mv old.txt new.txt",
+  "explanation": "Renames a file."
+},
+{
+  "title": "Remove File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["rm", "delete file"],
+  "description": "Delete a file",
+  "code": "rm file.txt",
+  "explanation": "Removes a file permanently."
+},
+{
+  "title": "Remove Multiple Files",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["rm", "delete multiple files"],
+  "description": "Delete multiple files",
+  "code": "rm file1.txt file2.txt file3.txt",
+  "explanation": "Removes multiple files at once."
+},
+{
+  "title": "Find File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["find", "search file"],
+  "description": "Find file by name",
+  "code": "find . -name \"file.txt\"",
+  "explanation": "Searches for a file in current directory tree."
+},
+{
+  "title": "Find Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["find directory", "search folder"],
+  "description": "Find directory by name",
+  "code": "find . -type d -name \"project\"",
+  "explanation": "Searches for directories only."
+},
+{
+  "title": "Locate File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["locate", "search file fast"],
+  "description": "Quickly locate files",
+  "code": "locate file.txt",
+  "explanation": "Uses system database for fast file search."
+}
+
+,
+{
+  "title": "Which Command",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["which", "command path"],
+  "description": "Find executable path",
+  "code": "which python",
+  "explanation": "Shows the full path of a command."
+},
+{
+  "title": "Whereis Command",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["whereis", "binary location"],
+  "description": "Locate command binaries and man pages",
+  "code": "whereis python",
+  "explanation": "Shows binary, source and manual page locations."
+},
+{
+  "title": "Basename",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["basename", "filename"],
+  "description": "Extract filename from path",
+  "code": "basename /home/user/file.txt",
+  "explanation": "Returns only the filename."
+},
+{
+  "title": "Dirname",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["dirname", "directory path"],
+  "description": "Extract directory from path",
+  "code": "dirname /home/user/file.txt",
+  "explanation": "Returns only the directory path."
+},
+{
+  "title": "Realpath",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["realpath", "absolute path"],
+  "description": "Get absolute path",
+  "code": "realpath file.txt",
+  "explanation": "Converts relative path to absolute path."
+},
+{
+  "title": "File Information",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["stat", "file info"],
+  "description": "Show detailed file information",
+  "code": "stat file.txt",
+  "explanation": "Displays size, permissions, timestamps and more."
+},
+{
+  "title": "Tree Directory Structure",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tree", "directory tree"],
+  "description": "Display folder structure",
+  "code": "tree",
+  "explanation": "Shows directories and files in tree format."
+},
+{
+  "title": "Disk Usage",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["du", "disk usage"],
+  "description": "Check directory size",
+  "code": "du -sh folder/",
+  "explanation": "Displays total size of a directory."
+},
+{
+  "title": "Disk Free Space",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["df", "disk free"],
+  "description": "Show filesystem usage",
+  "code": "df -h",
+  "explanation": "Displays disk usage in human-readable format."
+},
+{
+  "title": "File Type",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["file", "file type"],
+  "description": "Identify file type",
+  "code": "file script.sh",
+  "explanation": "Determines the type of a file."
+}
+
+,
+{
+  "title": "Cat File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["cat", "view file"],
+  "description": "Display file contents",
+  "code": "cat file.txt",
+  "explanation": "Prints the contents of a file."
+},
+{
+  "title": "Less File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["less", "view large file"],
+  "description": "View file page by page",
+  "code": "less file.txt",
+  "explanation": "Allows scrolling through large files."
+},
+{
+  "title": "More File",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["more", "view file"],
+  "description": "Display file page by page",
+  "code": "more file.txt",
+  "explanation": "Shows file contents one screen at a time."
+},
+{
+  "title": "Head Command",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["head", "first lines"],
+  "description": "Show first 10 lines",
+  "code": "head file.txt",
+  "explanation": "Displays first 10 lines of a file."
+},
+{
+  "title": "Head N Lines",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["head -n", "first n lines"],
+  "description": "Show first N lines",
+  "code": "head -n 20 file.txt",
+  "explanation": "Displays specified number of lines from start."
+},
+{
+  "title": "Tail Command",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tail", "last lines"],
+  "description": "Show last 10 lines",
+  "code": "tail file.txt",
+  "explanation": "Displays last 10 lines of a file."
+},
+{
+  "title": "Tail Follow Log",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tail -f", "live logs"],
+  "description": "Monitor file updates live",
+  "code": "tail -f app.log",
+  "explanation": "Shows new lines as they are added."
+},
+{
+  "title": "Number Lines",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["nl", "line numbers"],
+  "description": "Display file with line numbers",
+  "code": "nl file.txt",
+  "explanation": "Adds line numbers to output."
+},
+{
+  "title": "Reverse File Output",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tac", "reverse cat"],
+  "description": "Display file in reverse order",
+  "code": "tac file.txt",
+  "explanation": "Prints lines from bottom to top."
+},
+{
+  "title": "Word Count",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["wc", "count lines"],
+  "description": "Count lines, words and characters",
+  "code": "wc file.txt",
+  "explanation": "Shows line, word and byte counts."
+}
+
+,
+{
+  "title": "Create Tar Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tar", "archive"],
+  "description": "Create tar archive",
+  "code": "tar -cvf archive.tar folder/",
+  "explanation": "Creates a tar archive from a directory."
+},
+{
+  "title": "Extract Tar Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tar extract", "untar"],
+  "description": "Extract tar archive",
+  "code": "tar -xvf archive.tar",
+  "explanation": "Extracts contents of a tar archive."
+},
+{
+  "title": "Gzip Compress",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["gzip", "compress file"],
+  "description": "Compress file using gzip",
+  "code": "gzip file.txt",
+  "explanation": "Compresses file and creates file.txt.gz."
+},
+{
+  "title": "Gunzip Extract",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["gunzip", "extract gzip"],
+  "description": "Extract gzip file",
+  "code": "gunzip file.txt.gz",
+  "explanation": "Restores original file from gzip archive."
+},
+{
+  "title": "Create Zip Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["zip", "archive"],
+  "description": "Create zip archive",
+  "code": "zip archive.zip file.txt",
+  "explanation": "Creates a zip archive."
+},
+{
+  "title": "Extract Zip Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["unzip", "extract zip"],
+  "description": "Extract zip archive",
+  "code": "unzip archive.zip",
+  "explanation": "Extracts contents of a zip file."
+},
+{
+  "title": "XZ Compress",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "intermediate",
+  "tags": ["xz", "compress"],
+  "description": "Compress file using xz",
+  "code": "xz file.txt",
+  "explanation": "Creates highly compressed .xz files."
+},
+{
+  "title": "Create Tar Gzip Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tar.gz", "gzip archive"],
+  "description": "Create compressed tar archive",
+  "code": "tar -czvf archive.tar.gz folder/",
+  "explanation": "Creates a tar archive compressed with gzip."
+},
+{
+  "title": "Extract Tar Gzip Archive",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["tar.gz extract", "untar gzip"],
+  "description": "Extract tar.gz archive",
+  "code": "tar -xzvf archive.tar.gz",
+  "explanation": "Extracts compressed tar archives."
+},
+{
+  "title": "List Block Devices",
+  "type": "command",
+  "language": "linux",
+  "category": "file-system",
+  "difficulty": "beginner",
+  "tags": ["lsblk", "disk info"],
+  "description": "Display storage devices",
+  "code": "lsblk",
+  "explanation": "Shows disks, partitions and mount points."
+}
+
+
+
+]

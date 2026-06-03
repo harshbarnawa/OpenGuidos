@@ -1,0 +1,339 @@
+[
+{
+  "title": "Ping Host",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ping", "network connectivity"],
+  "description": "Check connectivity to a host",
+  "code": "ping google.com",
+  "explanation": "Sends ICMP packets to test connectivity."
+},
+{
+  "title": "Ping Custom Count",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ping count", "icmp"],
+  "description": "Send limited ping requests",
+  "code": "ping -c 4 google.com",
+  "explanation": "Stops after sending specified number of packets."
+},
+{
+  "title": "Curl Request",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["curl", "http request"],
+  "description": "Fetch content from URL",
+  "code": "curl https://example.com",
+  "explanation": "Retrieves data from a URL."
+},
+{
+  "title": "Curl Download File",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["curl download", "save file"],
+  "description": "Download file using curl",
+  "code": "curl -O https://example.com/file.zip",
+  "explanation": "Downloads file using original filename."
+},
+{
+  "title": "Wget Download",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["wget", "download file"],
+  "description": "Download file from URL",
+  "code": "wget https://example.com/file.zip",
+  "explanation": "Downloads files from the web."
+},
+{
+  "title": "Ifconfig",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ifconfig", "network interfaces"],
+  "description": "Display network interface information",
+  "code": "ifconfig",
+  "explanation": "Shows IP addresses and network interfaces."
+},
+{
+  "title": "IP Address Information",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ip addr", "network info"],
+  "description": "Show network addresses",
+  "code": "ip addr",
+  "explanation": "Modern replacement for ifconfig."
+},
+{
+  "title": "IP Route",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ip route", "routing table"],
+  "description": "Display routing table",
+  "code": "ip route",
+  "explanation": "Shows network routing information."
+},
+{
+  "title": "Hostname",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["hostname", "system name"],
+  "description": "Show system hostname",
+  "code": "hostname",
+  "explanation": "Displays machine hostname."
+},
+{
+  "title": "IP Address Only",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["hostname ip", "local ip"],
+  "description": "Show local IP addresses",
+  "code": "hostname -I",
+  "explanation": "Displays assigned IP addresses."
+}
+
+,
+{
+  "title": "Netstat Connections",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["netstat", "connections"],
+  "description": "Display active network connections",
+  "code": "netstat",
+  "explanation": "Shows active connections and listening ports."
+},
+{
+  "title": "Netstat Listening Ports",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["netstat ports", "listening services"],
+  "description": "Show listening ports",
+  "code": "netstat -tulpn",
+  "explanation": "Displays TCP/UDP listening ports and processes."
+},
+{
+  "title": "Socket Statistics",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ss", "socket stats"],
+  "description": "Display socket information",
+  "code": "ss",
+  "explanation": "Modern replacement for netstat."
+},
+{
+  "title": "Socket Listening Ports",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["ss ports", "listening sockets"],
+  "description": "Show listening sockets",
+  "code": "ss -tulpn",
+  "explanation": "Displays active listening ports and services."
+},
+{
+  "title": "Traceroute",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["traceroute", "route path"],
+  "description": "Trace network path",
+  "code": "traceroute google.com",
+  "explanation": "Shows route packets take to destination."
+},
+{
+  "title": "Tracepath",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["tracepath", "network route"],
+  "description": "Trace path without root privileges",
+  "code": "tracepath google.com",
+  "explanation": "Alternative to traceroute."
+},
+{
+  "title": "NSLookup",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["nslookup", "dns lookup"],
+  "description": "Query DNS records",
+  "code": "nslookup google.com",
+  "explanation": "Retrieves DNS information for a domain."
+},
+{
+  "title": "Dig DNS Query",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["dig", "dns query"],
+  "description": "Advanced DNS lookup",
+  "code": "dig google.com",
+  "explanation": "Provides detailed DNS records."
+},
+{
+  "title": "Host Lookup",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["host", "dns lookup"],
+  "description": "Resolve domain information",
+  "code": "host google.com",
+  "explanation": "Shows IP address and DNS information."
+},
+{
+  "title": "Whois Lookup",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["whois", "domain info"],
+  "description": "Get domain registration details",
+  "code": "whois google.com",
+  "explanation": "Displays domain ownership and registration information."
+}
+
+,
+{
+  "title": "Netcat Connect",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["nc", "netcat", "tcp connect"],
+  "description": "Connect to remote host and port",
+  "code": "nc google.com 80",
+  "explanation": "Opens TCP connection to specified host and port."
+},
+{
+  "title": "Netcat Listen",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["nc listen", "netcat server"],
+  "description": "Listen on a port",
+  "code": "nc -lvnp 8080",
+  "explanation": "Starts a TCP listener on specified port."
+},
+{
+  "title": "Telnet Connection",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["telnet", "remote connection"],
+  "description": "Connect to remote service",
+  "code": "telnet google.com 80",
+  "explanation": "Tests connectivity to remote ports."
+},
+{
+  "title": "SSH Login",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ssh", "remote login"],
+  "description": "Connect to remote server",
+  "code": "ssh user@server-ip",
+  "explanation": "Logs into a remote machine securely."
+},
+{
+  "title": "SSH Custom Port",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["ssh port", "custom ssh"],
+  "description": "SSH using custom port",
+  "code": "ssh -p 2222 user@server-ip",
+  "explanation": "Connects through a non-default SSH port."
+},
+{
+  "title": "SCP Copy File",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["scp", "copy file"],
+  "description": "Copy file to remote server",
+  "code": "scp file.txt user@server:/home/user/",
+  "explanation": "Transfers file securely using SSH."
+},
+{
+  "title": "SCP Copy Directory",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "beginner",
+  "tags": ["scp directory", "copy folder"],
+  "description": "Copy directory recursively",
+  "code": "scp -r project/ user@server:/home/user/",
+  "explanation": "Transfers entire directory securely."
+},
+{
+  "title": "Rsync Synchronization",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["rsync", "sync files"],
+  "description": "Synchronize files efficiently",
+  "code": "rsync -av source/ destination/",
+  "explanation": "Copies only changed files."
+},
+{
+  "title": "Nmap Port Scan",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "intermediate",
+  "tags": ["nmap", "port scan"],
+  "description": "Scan open ports",
+  "code": "nmap 192.168.1.1",
+  "explanation": "Discovers open ports and services."
+},
+{
+  "title": "Tcpdump Packet Capture",
+  "type": "command",
+  "language": "linux",
+  "category": "networking",
+  "difficulty": "advanced",
+  "tags": ["tcpdump", "packet capture"],
+  "description": "Capture network packets",
+  "code": "tcpdump -i eth0",
+  "explanation": "Captures and analyzes network traffic."
+}
+
+
+
+]

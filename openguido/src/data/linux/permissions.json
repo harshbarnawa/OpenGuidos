@@ -1,0 +1,339 @@
+[
+{
+  "title": "Change File Permissions 755",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chmod 755", "permissions"],
+  "description": "Set file permissions to 755",
+  "code": "chmod 755 file.sh",
+  "explanation": "Owner can read/write/execute, others can read/execute."
+},
+{
+  "title": "Change File Permissions 777",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chmod 777", "full permissions"],
+  "description": "Grant all permissions",
+  "code": "chmod 777 file.txt",
+  "explanation": "Everyone gets read, write and execute permissions."
+},
+{
+  "title": "Recursive Chmod",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chmod recursive", "permissions folder"],
+  "description": "Change permissions recursively",
+  "code": "chmod -R 755 project/",
+  "explanation": "Applies permissions to all files and subdirectories."
+},
+{
+  "title": "Change Owner",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chown", "change owner"],
+  "description": "Change file owner",
+  "code": "chown user file.txt",
+  "explanation": "Transfers ownership to another user."
+},
+{
+  "title": "Change Owner And Group",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chown user group", "ownership"],
+  "description": "Change owner and group",
+  "code": "chown user:group file.txt",
+  "explanation": "Updates both owner and group."
+},
+{
+  "title": "Change Group",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["chgrp", "group permissions"],
+  "description": "Change file group",
+  "code": "chgrp developers file.txt",
+  "explanation": "Assigns a new group to the file."
+},
+{
+  "title": "Display Umask",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["umask", "default permissions"],
+  "description": "Show default permission mask",
+  "code": "umask",
+  "explanation": "Displays default permission settings."
+},
+{
+  "title": "Set Umask",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["umask set", "permission mask"],
+  "description": "Set default permissions",
+  "code": "umask 022",
+  "explanation": "Defines default permissions for new files."
+},
+{
+  "title": "Run As Superuser",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["sudo", "administrator"],
+  "description": "Execute command as root",
+  "code": "sudo apt update",
+  "explanation": "Runs command with elevated privileges."
+},
+{
+  "title": "Switch User",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["su", "switch user"],
+  "description": "Switch to another user",
+  "code": "su username",
+  "explanation": "Changes current shell user."
+}
+
+,
+{
+  "title": "Change Password",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["passwd", "change password"],
+  "description": "Change user password",
+  "code": "passwd",
+  "explanation": "Prompts user to set a new password."
+},
+{
+  "title": "List User Groups",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["groups", "user groups"],
+  "description": "Show groups of current user",
+  "code": "groups",
+  "explanation": "Displays all groups the user belongs to."
+},
+{
+  "title": "User Identity",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["id", "user info"],
+  "description": "Display user and group IDs",
+  "code": "id",
+  "explanation": "Shows UID, GID and group memberships."
+},
+{
+  "title": "Current Username",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["whoami", "username"],
+  "description": "Display current username",
+  "code": "whoami",
+  "explanation": "Prints the effective username."
+},
+{
+  "title": "Logged In Users",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["users", "logged users"],
+  "description": "Show logged in users",
+  "code": "users",
+  "explanation": "Lists currently logged in users."
+},
+{
+  "title": "Who Is Logged In",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["w", "active users"],
+  "description": "Show active users and activity",
+  "code": "w",
+  "explanation": "Displays logged-in users and running processes."
+},
+{
+  "title": "Who Command",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["who", "logged in"],
+  "description": "Display logged in users",
+  "code": "who",
+  "explanation": "Shows login sessions currently active."
+},
+{
+  "title": "Login History",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["last", "login history"],
+  "description": "View user login history",
+  "code": "last",
+  "explanation": "Displays previous login sessions."
+},
+{
+  "title": "Finger User Information",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["finger", "user details"],
+  "description": "Display user information",
+  "code": "finger username",
+  "explanation": "Shows details about a user account."
+},
+{
+  "title": "Edit Sudoers File",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["visudo", "sudoers"],
+  "description": "Safely edit sudo permissions",
+  "code": "visudo",
+  "explanation": "Opens sudoers file with syntax checking."
+}
+
+,
+{
+  "title": "Get ACL Permissions",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["getfacl", "acl"],
+  "description": "View Access Control Lists",
+  "code": "getfacl file.txt",
+  "explanation": "Displays ACL permissions of a file or directory."
+},
+{
+  "title": "Set ACL Permissions",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["setfacl", "acl"],
+  "description": "Set Access Control Lists",
+  "code": "setfacl -m u:john:rwx file.txt",
+  "explanation": "Grants specific permissions to a user."
+},
+{
+  "title": "Create Hard Link",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["ln", "hard link"],
+  "description": "Create hard link",
+  "code": "ln source.txt hardlink.txt",
+  "explanation": "Creates another reference to the same file."
+},
+{
+  "title": "Create Symbolic Link",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["ln -s", "symlink"],
+  "description": "Create symbolic link",
+  "code": "ln -s source.txt symlink.txt",
+  "explanation": "Creates a shortcut pointing to another file."
+},
+{
+  "title": "Mount Filesystem",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["mount", "filesystem"],
+  "description": "Mount a filesystem",
+  "code": "mount /dev/sdb1 /mnt",
+  "explanation": "Attaches a filesystem to a directory."
+},
+{
+  "title": "Unmount Filesystem",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["umount", "unmount"],
+  "description": "Unmount a filesystem",
+  "code": "umount /mnt",
+  "explanation": "Detaches a mounted filesystem."
+},
+{
+  "title": "Edit Cron Jobs",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["crontab -e", "cron"],
+  "description": "Edit scheduled jobs",
+  "code": "crontab -e",
+  "explanation": "Opens cron configuration for editing."
+},
+{
+  "title": "List Cron Jobs",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "beginner",
+  "tags": ["crontab -l", "cron list"],
+  "description": "View scheduled jobs",
+  "code": "crontab -l",
+  "explanation": "Displays current cron jobs."
+},
+{
+  "title": "Screen Session",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["screen", "terminal session"],
+  "description": "Start screen session",
+  "code": "screen",
+  "explanation": "Creates detachable terminal sessions."
+},
+{
+  "title": "TMUX Session",
+  "type": "command",
+  "language": "linux",
+  "category": "permissions",
+  "difficulty": "intermediate",
+  "tags": ["tmux", "terminal multiplexer"],
+  "description": "Start tmux session",
+  "code": "tmux",
+  "explanation": "Creates persistent terminal sessions with panes and windows."
+}
+
+
+
+]

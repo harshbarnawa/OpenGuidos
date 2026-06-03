@@ -1,0 +1,338 @@
+[
+{
+  "title": "List Running Processes",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["ps", "process list"],
+  "description": "Show running processes",
+  "code": "ps",
+  "explanation": "Displays processes associated with current terminal."
+},
+{
+  "title": "List All Processes",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["ps aux", "all processes"],
+  "description": "Show all running processes",
+  "code": "ps aux",
+  "explanation": "Displays detailed information about all processes."
+},
+{
+  "title": "Top Processes",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["top", "process monitor"],
+  "description": "Monitor system processes",
+  "code": "top",
+  "explanation": "Real-time process monitoring."
+},
+{
+  "title": "HTop Monitor",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["htop", "interactive monitor"],
+  "description": "Interactive process viewer",
+  "code": "htop",
+  "explanation": "Improved version of top."
+},
+{
+  "title": "Kill Process",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["kill", "terminate process"],
+  "description": "Terminate process by PID",
+  "code": "kill 1234",
+  "explanation": "Sends SIGTERM signal to process."
+},
+{
+  "title": "Force Kill Process",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["kill -9", "force kill"],
+  "description": "Forcefully terminate process",
+  "code": "kill -9 1234",
+  "explanation": "Sends SIGKILL signal."
+},
+{
+  "title": "Kill All Processes By Name",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["killall", "terminate by name"],
+  "description": "Kill processes by name",
+  "code": "killall chrome",
+  "explanation": "Terminates all matching processes."
+},
+{
+  "title": "Find Process PID",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["pgrep", "find pid"],
+  "description": "Find process IDs by name",
+  "code": "pgrep chrome",
+  "explanation": "Returns matching process IDs."
+},
+{
+  "title": "Kill Process By Name",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["pkill", "kill by name"],
+  "description": "Terminate process using name",
+  "code": "pkill chrome",
+  "explanation": "Kills processes matching a name."
+},
+{
+  "title": "Background Jobs",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["jobs", "background tasks"],
+  "description": "List shell jobs",
+  "code": "jobs",
+  "explanation": "Shows background and suspended jobs."
+}
+
+,
+{
+  "title": "Background Job",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["bg", "background process"],
+  "description": "Resume job in background",
+  "code": "bg %1",
+  "explanation": "Continues a stopped job in the background."
+},
+{
+  "title": "Foreground Job",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["fg", "foreground process"],
+  "description": "Bring job to foreground",
+  "code": "fg %1",
+  "explanation": "Moves a background job to the foreground."
+},
+{
+  "title": "Run With Nohup",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["nohup", "background execution"],
+  "description": "Run process after terminal closes",
+  "code": "nohup python app.py &",
+  "explanation": "Keeps process running even after logout."
+},
+{
+  "title": "Run With Nice",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["nice", "process priority"],
+  "description": "Start process with priority",
+  "code": "nice -n 10 python app.py",
+  "explanation": "Launches process with adjusted priority."
+},
+{
+  "title": "Change Process Priority",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["renice", "priority"],
+  "description": "Modify priority of running process",
+  "code": "renice 10 -p 1234",
+  "explanation": "Changes niceness of existing process."
+},
+{
+  "title": "System Uptime",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["uptime", "system status"],
+  "description": "Show system uptime",
+  "code": "uptime",
+  "explanation": "Displays uptime and load averages."
+},
+{
+  "title": "Memory Usage",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["free", "ram usage"],
+  "description": "Display memory statistics",
+  "code": "free -h",
+  "explanation": "Shows RAM and swap usage."
+},
+{
+  "title": "Virtual Memory Statistics",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["vmstat", "memory stats"],
+  "description": "Show virtual memory information",
+  "code": "vmstat",
+  "explanation": "Displays CPU, memory and I/O statistics."
+},
+{
+  "title": "I/O Statistics",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["iostat", "disk io"],
+  "description": "Display CPU and disk statistics",
+  "code": "iostat",
+  "explanation": "Shows disk throughput and CPU utilization."
+},
+{
+  "title": "System Activity Report",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "advanced",
+  "tags": ["sar", "performance monitoring"],
+  "description": "Collect and report system activity",
+  "code": "sar -u 1 5",
+  "explanation": "Displays CPU usage statistics over time."
+}
+
+,
+{
+  "title": "Systemctl Status",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl status", "service status"],
+  "description": "Check service status",
+  "code": "systemctl status nginx",
+  "explanation": "Shows current state and logs of a service."
+},
+{
+  "title": "Systemctl Start Service",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl start", "start service"],
+  "description": "Start a service",
+  "code": "systemctl start nginx",
+  "explanation": "Starts the specified service."
+},
+{
+  "title": "Systemctl Stop Service",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl stop", "stop service"],
+  "description": "Stop a service",
+  "code": "systemctl stop nginx",
+  "explanation": "Stops the specified service."
+},
+{
+  "title": "Systemctl Restart Service",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl restart", "restart service"],
+  "description": "Restart a service",
+  "code": "systemctl restart nginx",
+  "explanation": "Stops and starts the service again."
+},
+{
+  "title": "Systemctl Enable Service",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl enable", "boot service"],
+  "description": "Enable service at boot",
+  "code": "systemctl enable nginx",
+  "explanation": "Starts service automatically on system boot."
+},
+{
+  "title": "Systemctl Disable Service",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["systemctl disable", "disable boot"],
+  "description": "Disable service at boot",
+  "code": "systemctl disable nginx",
+  "explanation": "Prevents service from starting automatically."
+},
+{
+  "title": "Service Status",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["service status", "legacy service"],
+  "description": "Check service status",
+  "code": "service nginx status",
+  "explanation": "Legacy command to view service status."
+},
+{
+  "title": "Service Restart",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "beginner",
+  "tags": ["service restart", "restart daemon"],
+  "description": "Restart a service",
+  "code": "service nginx restart",
+  "explanation": "Legacy command to restart a service."
+},
+{
+  "title": "Journalctl Logs",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["journalctl", "system logs"],
+  "description": "View system logs",
+  "code": "journalctl -xe",
+  "explanation": "Displays detailed systemd logs and errors."
+},
+{
+  "title": "Kernel Messages",
+  "type": "command",
+  "language": "linux",
+  "category": "process",
+  "difficulty": "intermediate",
+  "tags": ["dmesg", "kernel logs"],
+  "description": "View kernel messages",
+  "code": "dmesg | less",
+  "explanation": "Displays kernel boot and hardware messages."
+}
+
+
+]
