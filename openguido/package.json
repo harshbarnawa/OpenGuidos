@@ -1,16 +1,18 @@
 {
   "name": "openguido",
-  "displayName": "openguido",
+  "displayName": "OpengGuido",
+  "publisher": "HarshBarnawa",
   "description": "Instant syntax and command lookup for developers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.120.0"
   },
   "categories": [
+    "Programming Languages",
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:openguido.searchSnippet"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -49,5 +51,24 @@
   },
   "dependencies": {
     "fuse.js": "^7.4.0"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshbarnawa/OpenGuido"
   }
+,
+"keywords": [
+  "cpp",
+  "c++",
+  "git",
+  "linux",
+  "snippets",
+  "syntax",
+  "developer",
+  "algorithms",
+  "dsa",
+  "programming"
+]
+  
 }
