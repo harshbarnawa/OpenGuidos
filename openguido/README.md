@@ -1,71 +1,159 @@
-# openguido README
+# OpenGuido
 
-This is the README for your extension "openguido". After writing up a brief description, we recommend including the following sections.
-
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+OpenGuido is a VS Code extension that helps developers quickly search programming syntax, code snippets, Linux commands, and Git commands directly inside Visual Studio Code.
 
 ---
 
-## Following extension guidelines
+## Features
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+* Instant snippet search
+* C++ syntax lookup
+* STL reference
+* OOP concepts
+* DSA templates
+* Algorithm templates
+* Git command lookup
+* Linux command lookup
+* Preview snippets
+* Copy to clipboard
+* Insert code directly into editor
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+---
 
-## Working with Markdown
+## Supported Categories
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+### C++
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+* Basics
+* STL
+* OOP
+* Data Structures
+* Algorithms
 
-## For more information
+### Git
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+* Repository Management
+* Branching
+* Commits
+* Remote Operations
 
-**Enjoy!**
+### Linux
+
+* File System
+* Process Management
+* Networking
+* Permissions
+
+---
+
+## Installation
+
+### From VS Code Marketplace
+
+1. Open Visual Studio Code
+2. Go to Extensions (`Ctrl + Shift + X`)
+3. Search for **OpenGuido**
+4. Click **Install**
+5. Reload VS Code if prompted
+
+---
+
+## How To Use
+
+### Method 1: Command Palette
+
+1. Press `Ctrl + Shift + P`
+2. Type:
+
+```text
+OpenGuido: Search Snippet
+```
+
+3. Press Enter
+4. Search for any syntax, command, or snippet
+
+Examples:
+
+```text
+vector
+binary search
+git clone
+git push
+ping
+ssh
+chmod
+```
+
+---
+
+### Available Actions
+
+For Code Snippets:
+
+* Preview Snippet
+* Copy To Clipboard
+* Insert Into Editor
+
+For Commands:
+
+* Preview Command
+* Copy To Clipboard
+
+---
+
+## Example Searches
+
+```text
+vector sort
+unordered_map
+priority queue
+binary search
+dfs
+bfs
+
+git clone
+git push
+git branch
+
+ping host
+ssh login
+chmod 755
+```
+
+---
+
+## Current Database
+
+* 500+ snippets and commands
+* C++
+* Git
+* Linux
+
+More languages and datasets will be added in future releases.
+
+Planned additions:
+
+* Java
+* Python
+* Docker
+* SQL
+* React
+* Node.js
+
+---
+
+## Version
+
+Current Version: 0.0.1
+
+---
+
+## Author
+
+Harsh Barnawa
+
+---
+
+## License
+
+MIT License
