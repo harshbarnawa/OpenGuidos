@@ -1,0 +1,1011 @@
+[
+{
+  "title": "Vector Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["vector", "vector declaration", "dynamic array"],
+  "description": "Declare a vector",
+  "code": "vector<int> v;",
+  "explanation": "Creates an empty dynamic array."
+},
+{
+  "title": "Vector Initialization",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["vector initialize", "vector values"],
+  "description": "Initialize vector with values",
+  "code": "vector<int> v = {1, 2, 3, 4, 5};",
+  "explanation": "Creates vector with initial values."
+},
+{
+  "title": "Vector Input",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["vector input", "read vector"],
+  "description": "Input vector elements",
+  "code": "vector<int> v(n);\nfor(int i = 0; i < n; i++){\n    cin >> v[i];\n}",
+  "explanation": "Reads values into vector."
+},
+{
+  "title": "Vector Traversal",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["vector traversal", "iterate vector"],
+  "description": "Traverse vector using range loop",
+  "code": "for(auto x : v){\n    cout << x << ' ';\n}",
+  "explanation": "Prints all vector elements."
+},
+{
+  "title": "Vector Push Back",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["push_back", "vector insert"],
+  "description": "Insert element at end",
+  "code": "v.push_back(10);",
+  "explanation": "Adds element to the end of vector."
+},
+{
+  "title": "Vector Pop Back",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["pop_back", "remove last element"],
+  "description": "Remove last element",
+  "code": "v.pop_back();",
+  "explanation": "Removes the last element."
+},
+{
+  "title": "Vector Size",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["size", "vector size"],
+  "description": "Get vector size",
+  "code": "int n = v.size();",
+  "explanation": "Returns number of elements."
+},
+{
+  "title": "Vector Empty",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["empty", "vector empty"],
+  "description": "Check if vector is empty",
+  "code": "if(v.empty()){\n    cout << \"Empty\";\n}",
+  "explanation": "Returns true if vector has no elements."
+},
+{
+  "title": "Vector Front",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["front", "first element"],
+  "description": "Access first element",
+  "code": "cout << v.front();",
+  "explanation": "Returns first element."
+},
+{
+  "title": "Vector Back",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["back", "last element"],
+  "description": "Access last element",
+  "code": "cout << v.back();",
+  "explanation": "Returns last element."
+}
+
+,
+{
+  "title": "Vector Clear",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["vector clear", "clear vector"],
+  "description": "Remove all elements from vector",
+  "code": "v.clear();",
+  "explanation": "Removes all elements from the vector."
+},
+{
+  "title": "Vector Resize",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["resize", "vector resize"],
+  "description": "Change vector size",
+  "code": "v.resize(10);",
+  "explanation": "Resizes vector to specified size."
+},
+{
+  "title": "Vector Insert",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["insert", "vector insert"],
+  "description": "Insert element at position",
+  "code": "v.insert(v.begin() + 2, 100);",
+  "explanation": "Inserts element at specified position."
+},
+{
+  "title": "Vector Erase",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["erase", "vector erase"],
+  "description": "Remove element from vector",
+  "code": "v.erase(v.begin() + 2);",
+  "explanation": "Removes element at given position."
+},
+{
+  "title": "Vector Sort",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["sort vector", "vector sort"],
+  "description": "Sort vector in ascending order",
+  "code": "sort(v.begin(), v.end());",
+  "explanation": "Sorts vector elements in ascending order."
+},
+{
+  "title": "Vector Reverse",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["reverse vector", "vector reverse"],
+  "description": "Reverse vector elements",
+  "code": "reverse(v.begin(), v.end());",
+  "explanation": "Reverses the order of elements."
+},
+{
+  "title": "Pair Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["pair", "pair declaration"],
+  "description": "Declare a pair",
+  "code": "pair<int, int> p;",
+  "explanation": "Stores two values together."
+},
+{
+  "title": "Pair Initialization",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["pair initialize", "make_pair"],
+  "description": "Initialize pair",
+  "code": "pair<int, int> p = {1, 2};",
+  "explanation": "Creates a pair with values."
+},
+{
+  "title": "Pair Access",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["pair first", "pair second"],
+  "description": "Access pair values",
+  "code": "cout << p.first << ' ' << p.second;",
+  "explanation": "Accesses first and second values of pair."
+},
+{
+  "title": "Make Pair",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["make_pair", "pair create"],
+  "description": "Create pair using make_pair",
+  "code": "auto p = make_pair(10, 20);",
+  "explanation": "Creates a pair with automatic type deduction."
+}
+
+,
+{
+  "title": "Tuple Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["tuple", "tuple declaration"],
+  "description": "Declare a tuple",
+  "code": "tuple<int, string, double> t;",
+  "explanation": "Stores multiple values of different types."
+},
+{
+  "title": "Tuple Initialization",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["tuple initialize", "make_tuple"],
+  "description": "Initialize a tuple",
+  "code": "auto t = make_tuple(1, \"OpenGuido\", 3.14);",
+  "explanation": "Creates a tuple with initial values."
+},
+{
+  "title": "Tuple Access",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["tuple access", "get tuple"],
+  "description": "Access tuple elements",
+  "code": "cout << get<0>(t);",
+  "explanation": "Accesses tuple elements using get<>."
+},
+{
+  "title": "Tuple Unpack",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["structured binding", "tuple unpack"],
+  "description": "Unpack tuple values",
+  "code": "auto [id, name, score] = t;",
+  "explanation": "Extracts tuple values into variables."
+},
+{
+  "title": "Set Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["set", "set declaration"],
+  "description": "Declare a set",
+  "code": "set<int> st;",
+  "explanation": "Stores unique elements in sorted order."
+},
+{
+  "title": "Set Insert",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["set insert", "insert set"],
+  "description": "Insert element into set",
+  "code": "st.insert(10);",
+  "explanation": "Adds an element if not already present."
+},
+{
+  "title": "Set Erase",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["set erase", "remove set"],
+  "description": "Remove element from set",
+  "code": "st.erase(10);",
+  "explanation": "Removes an element from the set."
+},
+{
+  "title": "Set Find",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["set find", "search set"],
+  "description": "Find element in set",
+  "code": "auto it = st.find(10);",
+  "explanation": "Returns iterator to element if found."
+},
+{
+  "title": "Set Count",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["set count", "exists in set"],
+  "description": "Check if element exists",
+  "code": "if(st.count(10)){\n    cout << \"Found\";\n}",
+  "explanation": "Returns 1 if element exists, otherwise 0."
+},
+{
+  "title": "Set Traversal",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["iterate set", "set traversal"],
+  "description": "Traverse all set elements",
+  "code": "for(auto x : st){\n    cout << x << ' ';\n}",
+  "explanation": "Iterates through all elements in sorted order."
+}
+
+,
+{
+  "title": "Stack Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["stack", "stack declaration"],
+  "description": "Declare a stack",
+  "code": "stack<int> st;",
+  "explanation": "LIFO (Last In First Out) data structure."
+},
+{
+  "title": "Stack Push",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["stack push", "push stack"],
+  "description": "Insert element into stack",
+  "code": "st.push(10);",
+  "explanation": "Adds element to the top of stack."
+},
+{
+  "title": "Stack Pop",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["stack pop", "remove stack"],
+  "description": "Remove top element",
+  "code": "st.pop();",
+  "explanation": "Removes the top element."
+},
+{
+  "title": "Stack Top",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["stack top", "peek stack"],
+  "description": "Access top element",
+  "code": "cout << st.top();",
+  "explanation": "Returns the top element."
+},
+{
+  "title": "Queue Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["queue", "queue declaration"],
+  "description": "Declare a queue",
+  "code": "queue<int> q;",
+  "explanation": "FIFO (First In First Out) data structure."
+},
+{
+  "title": "Queue Push",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["queue push", "enqueue"],
+  "description": "Insert element into queue",
+  "code": "q.push(10);",
+  "explanation": "Adds element to the rear of queue."
+},
+{
+  "title": "Queue Pop",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["queue pop", "dequeue"],
+  "description": "Remove front element",
+  "code": "q.pop();",
+  "explanation": "Removes the front element."
+},
+{
+  "title": "Queue Front",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["queue front", "front queue"],
+  "description": "Access front element",
+  "code": "cout << q.front();",
+  "explanation": "Returns the first element."
+},
+{
+  "title": "Deque Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["deque", "deque declaration"],
+  "description": "Declare a deque",
+  "code": "deque<int> dq;",
+  "explanation": "Double ended queue."
+},
+{
+  "title": "Deque Push Front",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["deque push front", "push_front"],
+  "description": "Insert element at front",
+  "code": "dq.push_front(10);",
+  "explanation": "Adds element at the beginning of deque."
+}
+
+,
+{
+  "title": "Priority Queue Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["priority queue", "max heap"],
+  "description": "Declare max heap priority queue",
+  "code": "priority_queue<int> pq;",
+  "explanation": "Largest element remains at the top."
+},
+{
+  "title": "Priority Queue Push",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["priority queue push", "heap push"],
+  "description": "Insert element into priority queue",
+  "code": "pq.push(10);",
+  "explanation": "Adds an element to the heap."
+},
+{
+  "title": "Priority Queue Pop",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["priority queue pop", "heap pop"],
+  "description": "Remove top element",
+  "code": "pq.pop();",
+  "explanation": "Removes the largest element."
+},
+{
+  "title": "Priority Queue Top",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["priority queue top", "heap top"],
+  "description": "Access top element",
+  "code": "cout << pq.top();",
+  "explanation": "Returns the largest element."
+},
+{
+  "title": "Min Heap Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["min heap", "priority queue min heap"],
+  "description": "Declare min heap",
+  "code": "priority_queue<int, vector<int>, greater<int>> pq;",
+  "explanation": "Smallest element remains at the top."
+},
+{
+  "title": "Bitset Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["bitset", "binary bits"],
+  "description": "Declare bitset",
+  "code": "bitset<8> b(\"10101010\");",
+  "explanation": "Stores fixed-size sequence of bits."
+},
+{
+  "title": "Bitset Count",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["bitset count", "count bits"],
+  "description": "Count set bits",
+  "code": "cout << b.count();",
+  "explanation": "Returns number of bits set to 1."
+},
+{
+  "title": "Bitset Test",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["bitset test", "check bit"],
+  "description": "Check if bit is set",
+  "code": "cout << b.test(2);",
+  "explanation": "Returns true if specified bit is 1."
+},
+{
+  "title": "Bitset Set",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["bitset set", "set bit"],
+  "description": "Set a bit to 1",
+  "code": "b.set(3);",
+  "explanation": "Sets specified bit to 1."
+},
+{
+  "title": "Bitset Reset",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["bitset reset", "clear bit"],
+  "description": "Reset a bit to 0",
+  "code": "b.reset(3);",
+  "explanation": "Sets specified bit to 0."
+}
+
+,
+{
+  "title": "Sort Ascending",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["sort", "ascending sort", "sort vector"],
+  "description": "Sort elements in ascending order",
+  "code": "sort(v.begin(), v.end());",
+  "explanation": "Sorts elements from smallest to largest."
+},
+{
+  "title": "Sort Descending",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["sort descending", "greater", "reverse sort"],
+  "description": "Sort elements in descending order",
+  "code": "sort(v.begin(), v.end(), greater<int>());",
+  "explanation": "Sorts elements from largest to smallest."
+},
+{
+  "title": "Reverse Range",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["reverse", "reverse vector"],
+  "description": "Reverse elements in a range",
+  "code": "reverse(v.begin(), v.end());",
+  "explanation": "Reverses the order of elements."
+},
+{
+  "title": "Max Element",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["max element", "largest element"],
+  "description": "Find largest element",
+  "code": "int mx = *max_element(v.begin(), v.end());",
+  "explanation": "Returns the maximum value in the range."
+},
+{
+  "title": "Min Element",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["min element", "smallest element"],
+  "description": "Find smallest element",
+  "code": "int mn = *min_element(v.begin(), v.end());",
+  "explanation": "Returns the minimum value in the range."
+},
+{
+  "title": "Accumulate Sum",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["accumulate", "sum array", "sum vector"],
+  "description": "Calculate sum of elements",
+  "code": "int sum = accumulate(v.begin(), v.end(), 0);",
+  "explanation": "Computes the sum of all elements."
+},
+{
+  "title": "Count Occurrences",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["count", "count occurrences"],
+  "description": "Count occurrences of a value",
+  "code": "int cnt = count(v.begin(), v.end(), 5);",
+  "explanation": "Counts how many times a value appears."
+},
+{
+  "title": "Find Element",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["find", "search element"],
+  "description": "Find element in range",
+  "code": "auto it = find(v.begin(), v.end(), 10);",
+  "explanation": "Returns iterator to element if found."
+},
+{
+  "title": "Unique Elements",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["unique", "remove duplicates"],
+  "description": "Remove consecutive duplicates",
+  "code": "v.erase(unique(v.begin(), v.end()), v.end());",
+  "explanation": "Removes duplicate elements after sorting."
+},
+{
+  "title": "Next Permutation",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["next permutation", "permutations"],
+  "description": "Generate next lexicographical permutation",
+  "code": "next_permutation(v.begin(), v.end());",
+  "explanation": "Transforms range into next permutation."
+}
+
+
+
+,
+{
+  "title": "Lower Bound",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["lower bound", "binary search", "first greater equal"],
+  "description": "Find first element >= target",
+  "code": "auto it = lower_bound(v.begin(), v.end(), x);",
+  "explanation": "Returns iterator to first element not less than x."
+},
+{
+  "title": "Upper Bound",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["upper bound", "binary search", "first greater"],
+  "description": "Find first element > target",
+  "code": "auto it = upper_bound(v.begin(), v.end(), x);",
+  "explanation": "Returns iterator to first element greater than x."
+},
+{
+  "title": "Binary Search",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["binary search", "search sorted array"],
+  "description": "Check if element exists",
+  "code": "bool found = binary_search(v.begin(), v.end(), x);",
+  "explanation": "Returns true if x exists in sorted range."
+},
+{
+  "title": "Equal Range",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["equal range", "lower upper bound"],
+  "description": "Get lower and upper bound together",
+  "code": "auto p = equal_range(v.begin(), v.end(), x);",
+  "explanation": "Returns pair of iterators representing equal value range."
+},
+{
+  "title": "Is Sorted",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["is sorted", "sorted check"],
+  "description": "Check if range is sorted",
+  "code": "bool ok = is_sorted(v.begin(), v.end());",
+  "explanation": "Returns true if range is sorted."
+},
+{
+  "title": "Nth Element",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["nth element", "kth smallest"],
+  "description": "Find kth smallest element",
+  "code": "nth_element(v.begin(), v.begin() + k, v.end());",
+  "explanation": "Places kth element in correct position."
+},
+{
+  "title": "Partial Sort",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["partial sort", "top k elements"],
+  "description": "Sort first k elements",
+  "code": "partial_sort(v.begin(), v.begin() + k, v.end());",
+  "explanation": "Sorts only the first k elements."
+},
+{
+  "title": "Rotate Range",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["rotate", "cyclic shift"],
+  "description": "Rotate elements in range",
+  "code": "rotate(v.begin(), v.begin() + k, v.end());",
+  "explanation": "Rotates elements left by k positions."
+},
+{
+  "title": "Partition",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["partition", "predicate"],
+  "description": "Partition elements by condition",
+  "code": "partition(v.begin(), v.end(), [](int x){ return x % 2 == 0; });",
+  "explanation": "Places matching elements before non-matching ones."
+},
+{
+  "title": "Merge Sorted Ranges",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["merge", "merge arrays", "sorted merge"],
+  "description": "Merge two sorted ranges",
+  "code": "merge(a.begin(), a.end(), b.begin(), b.end(), back_inserter(res));",
+  "explanation": "Merges two sorted ranges into a third container."
+}
+
+
+,
+{
+  "title": "Begin Iterator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["begin", "iterator begin"],
+  "description": "Get iterator to first element",
+  "code": "auto it = v.begin();",
+  "explanation": "Returns iterator pointing to first element."
+},
+{
+  "title": "End Iterator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["end", "iterator end"],
+  "description": "Get iterator past last element",
+  "code": "auto it = v.end();",
+  "explanation": "Returns iterator after the last element."
+},
+{
+  "title": "Reverse Begin Iterator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["rbegin", "reverse iterator"],
+  "description": "Get reverse iterator to last element",
+  "code": "auto it = v.rbegin();",
+  "explanation": "Starts traversal from the last element."
+},
+{
+  "title": "Reverse End Iterator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["rend", "reverse iterator"],
+  "description": "Get reverse iterator past first element",
+  "code": "auto it = v.rend();",
+  "explanation": "Marks reverse traversal end."
+},
+{
+  "title": "Advance Iterator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["advance", "move iterator"],
+  "description": "Move iterator forward",
+  "code": "auto it = v.begin();\nadvance(it, 3);",
+  "explanation": "Moves iterator by specified positions."
+},
+{
+  "title": "Distance Between Iterators",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["distance", "iterator distance"],
+  "description": "Find distance between iterators",
+  "code": "int d = distance(v.begin(), v.end());",
+  "explanation": "Returns number of elements between iterators."
+},
+{
+  "title": "All Vector Macro",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["all", "all vector", "cp macro"],
+  "description": "Competitive programming shortcut",
+  "code": "#define all(v) v.begin(), v.end()",
+  "explanation": "Useful for sort, reverse and STL algorithms."
+},
+{
+  "title": "Erase Remove Idiom",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["erase remove", "remove element"],
+  "description": "Remove all occurrences of a value",
+  "code": "v.erase(remove(v.begin(), v.end(), x), v.end());",
+  "explanation": "Standard STL technique to remove elements."
+},
+{
+  "title": "Iota Initialization",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["iota", "fill sequence"],
+  "description": "Fill range with consecutive values",
+  "code": "iota(v.begin(), v.end(), 1);",
+  "explanation": "Fills container with increasing sequence starting from 1."
+},
+{
+  "title": "Copy Range",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["copy", "copy container"],
+  "description": "Copy one container to another",
+  "code": "copy(v.begin(), v.end(), back_inserter(res));",
+  "explanation": "Copies all elements into another container."
+}
+
+,
+{
+  "title": "Coordinate Compression",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "advanced",
+  "tags": ["coordinate compression", "compress values", "cp trick"],
+  "description": "Compress large values into small indices",
+  "code": "vector<int> comp = v;\nsort(comp.begin(), comp.end());\ncomp.erase(unique(comp.begin(), comp.end()), comp.end());\nfor(auto &x : v){\n    x = lower_bound(comp.begin(), comp.end(), x) - comp.begin();\n}",
+  "explanation": "Maps large values into a compact range."
+},
+{
+  "title": "Custom Sort Comparator",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["custom comparator", "custom sort"],
+  "description": "Sort using custom logic",
+  "code": "sort(v.begin(), v.end(), [](int a, int b){\n    return a > b;\n});",
+  "explanation": "Allows custom sorting rules."
+},
+{
+  "title": "Sort Pair By Second",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["sort pair", "pair second"],
+  "description": "Sort pairs by second value",
+  "code": "sort(v.begin(), v.end(), [](auto &a, auto &b){\n    return a.second < b.second;\n});",
+  "explanation": "Common competitive programming pattern."
+},
+{
+  "title": "Prefix Sum Template",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["prefix sum", "cumulative sum"],
+  "description": "Build prefix sum array",
+  "code": "vector<long long> pref(n + 1, 0);\nfor(int i = 0; i < n; i++){\n    pref[i + 1] = pref[i] + v[i];\n}",
+  "explanation": "Allows O(1) range sum queries."
+},
+{
+  "title": "Suffix Sum Template",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["suffix sum"],
+  "description": "Build suffix sum array",
+  "code": "vector<long long> suf(n + 1, 0);\nfor(int i = n - 1; i >= 0; i--){\n    suf[i] = suf[i + 1] + v[i];\n}",
+  "explanation": "Stores sums from right to left."
+},
+{
+  "title": "Difference Array Template",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "intermediate",
+  "tags": ["difference array", "range update"],
+  "description": "Range updates in O(1)",
+  "code": "diff[l] += val;\ndiff[r + 1] -= val;",
+  "explanation": "Efficient technique for range increment operations."
+},
+{
+  "title": "Fast IO",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["fast io", "competitive programming"],
+  "description": "Speed up input output",
+  "code": "ios::sync_with_stdio(false);\ncin.tie(nullptr);",
+  "explanation": "Reduces I/O overhead significantly."
+},
+{
+  "title": "Unique Sorted Vector",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["remove duplicates", "unique vector"],
+  "description": "Sort and remove duplicates",
+  "code": "sort(v.begin(), v.end());\nv.erase(unique(v.begin(), v.end()), v.end());",
+  "explanation": "Creates a sorted vector with unique elements."
+},
+{
+  "title": "Frequency Map Template",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "beginner",
+  "tags": ["frequency map", "count frequency"],
+  "description": "Count occurrences using map",
+  "code": "unordered_map<int, int> freq;\nfor(auto x : v){\n    freq[x]++;\n}",
+  "explanation": "Common frequency counting pattern."
+},
+{
+  "title": "Custom Priority Queue",
+  "type": "code",
+  "language": "cpp",
+  "category": "stl",
+  "difficulty": "advanced",
+  "tags": ["custom priority queue", "custom heap"],
+  "description": "Priority queue with custom comparator",
+  "code": "auto cmp = [](int a, int b){\n    return a > b;\n};\npriority_queue<int, vector<int>, decltype(cmp)> pq(cmp);",
+  "explanation": "Allows custom heap ordering."
+}
+]

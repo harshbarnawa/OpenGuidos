@@ -5,10 +5,10 @@
     "language": "cpp",
     "category": "basics",
     "difficulty": "beginner",
-    "tags": ["hello world", "print"],
+    "tags": ["hello world", "print", "basic program"],
     "description": "Basic hello world program",
-    "code": "#include <iostream>\nusing namespace std;\n\nint main(){\n    cout << \"Hello World\";\n}",
-    "explanation": "Basic C++ program."
+    "code": "#include <iostream>\nusing namespace std;\n\nint main(){\n    cout << \"Hello World\";\n    return 0;\n}",
+    "explanation": "Basic C++ program structure."
   },
   {
     "title": "Integer Variable",
@@ -16,10 +16,10 @@
     "language": "cpp",
     "category": "basics",
     "difficulty": "beginner",
-    "tags": ["int variable", "integer"],
-    "description": "Declare integer variable",
+    "tags": ["int", "integer variable"],
+    "description": "Declare an integer variable",
     "code": "int x = 10;",
-    "explanation": "Stores integer values."
+    "explanation": "Stores whole numbers."
   },
   {
     "title": "Double Variable",
@@ -28,9 +28,20 @@
     "category": "basics",
     "difficulty": "beginner",
     "tags": ["double", "floating point"],
-    "description": "Declare double variable",
-    "code": "double pi = 3.14159;",
-    "explanation": "Stores floating point values."
+    "description": "Declare a double variable",
+    "code": "double pi = 3.1415926535;",
+    "explanation": "Stores decimal values with high precision."
+  },
+  {
+    "title": "Float Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["float", "decimal"],
+    "description": "Declare a float variable",
+    "code": "float f = 3.14f;",
+    "explanation": "Stores decimal values."
   },
   {
     "title": "Character Variable",
@@ -39,9 +50,20 @@
     "category": "basics",
     "difficulty": "beginner",
     "tags": ["char", "character"],
-    "description": "Declare character variable",
+    "description": "Declare a character variable",
     "code": "char ch = 'A';",
     "explanation": "Stores a single character."
+  },
+  {
+    "title": "Boolean Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["bool", "boolean"],
+    "description": "Declare a boolean variable",
+    "code": "bool flag = true;",
+    "explanation": "Stores true or false values."
   },
   {
     "title": "String Declaration",
@@ -49,10 +71,21 @@
     "language": "cpp",
     "category": "basics",
     "difficulty": "beginner",
-    "tags": ["string", "declare string"],
-    "description": "Declare string variable",
+    "tags": ["string", "text"],
+    "description": "Declare a string variable",
     "code": "string s = \"OpenGuido\";",
     "explanation": "Stores text data."
+  },
+  {
+    "title": "Const Variable",
+    "type": "code",
+    "language": "cpp",
+    "category": "basics",
+    "difficulty": "beginner",
+    "tags": ["const", "constant"],
+    "description": "Declare a constant variable",
+    "code": "const int MOD = 1000000007;",
+    "explanation": "Value cannot be modified after initialization."
   },
   {
     "title": "Input Integer",
@@ -61,52 +94,468 @@
     "category": "basics",
     "difficulty": "beginner",
     "tags": ["cin", "input integer"],
-    "description": "Read integer from input",
+    "description": "Read an integer from input",
     "code": "int n;\ncin >> n;",
-    "explanation": "Reads integer input."
+    "explanation": "Reads an integer from standard input."
   },
   {
-    "title": "Output Variable",
+    "title": "Multiple Input",
     "type": "code",
     "language": "cpp",
     "category": "basics",
     "difficulty": "beginner",
-    "tags": ["cout", "print variable"],
-    "description": "Print variable value",
-    "code": "cout << x << endl;",
-    "explanation": "Outputs value to console."
-  },
-  {
-    "title": "If Statement",
-    "type": "code",
-    "language": "cpp",
-    "category": "basics",
-    "difficulty": "beginner",
-    "tags": ["if", "condition"],
-    "description": "Basic if statement",
-    "code": "if(x > 0){\n    cout << \"Positive\";\n}",
-    "explanation": "Executes code when condition is true."
-  },
-  {
-    "title": "For Loop",
-    "type": "code",
-    "language": "cpp",
-    "category": "basics",
-    "difficulty": "beginner",
-    "tags": ["for loop", "iteration"],
-    "description": "Basic for loop",
-    "code": "for(int i = 0; i < n; i++){\n    cout << i << endl;\n}",
-    "explanation": "Repeats code multiple times."
-  },
-  {
-    "title": "While Loop",
-    "type": "code",
-    "language": "cpp",
-    "category": "basics",
-    "difficulty": "beginner",
-    "tags": ["while loop"],
-    "description": "Basic while loop",
-    "code": "while(n > 0){\n    n--;\n}",
-    "explanation": "Repeats while condition is true."
+    "tags": ["multiple input", "cin"],
+    "description": "Read multiple values",
+    "code": "int a, b;\ncin >> a >> b;",
+    "explanation": "Reads multiple values in a single statement."
   }
+  ,
+  
+{
+  "title": "Getline Input",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["getline", "string input", "input with spaces"],
+  "description": "Read a complete line including spaces",
+  "code": "string s;\ngetline(cin, s);",
+  "explanation": "Reads an entire line from input."
+},
+{
+  "title": "Output Variable",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["cout", "print variable", "output"],
+  "description": "Print variable value",
+  "code": "cout << x << endl;",
+  "explanation": "Outputs variable value."
+},
+{
+  "title": "Formatted Output",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["fixed", "setprecision", "formatted output"],
+  "description": "Print decimal with precision",
+  "code": "#include <iomanip>\ncout << fixed << setprecision(2) << 3.14159;",
+  "explanation": "Formats floating point output."
+},
+{
+  "title": "If Statement",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["if", "condition"],
+  "description": "Basic if statement",
+  "code": "if(x > 0){\n    cout << \"Positive\";\n}",
+  "explanation": "Executes code when condition is true."
+},
+{
+  "title": "If Else Statement",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["if else", "condition"],
+  "description": "Basic if else statement",
+  "code": "if(x > 0){\n    cout << \"Positive\";\n}else{\n    cout << \"Negative\";\n}",
+  "explanation": "Chooses between two blocks."
+},
+{
+  "title": "Else If Ladder",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["else if", "multiple conditions"],
+  "description": "Check multiple conditions",
+  "code": "if(x > 0){}\nelse if(x < 0){}\nelse{}",
+  "explanation": "Handles multiple conditions."
+},
+{
+  "title": "Nested If",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["nested if", "if inside if"],
+  "description": "If statement inside another if",
+  "code": "if(x > 0){\n    if(x % 2 == 0){\n        cout << \"Even\";\n    }\n}",
+  "explanation": "Places one if statement inside another."
+},
+{
+  "title": "Switch Case",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["switch", "case", "menu"],
+  "description": "Switch case statement",
+  "code": "switch(choice){\ncase 1:\n    cout << \"One\";\n    break;\ndefault:\n    cout << \"Invalid\";\n}",
+  "explanation": "Alternative to multiple if else statements."
+},
+{
+  "title": "Ternary Operator",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["ternary", "conditional operator"],
+  "description": "Short form of if else",
+  "code": "string ans = (x > 0) ? \"Positive\" : \"Negative\";",
+  "explanation": "Compact conditional expression."
+},
+{
+  "title": "Comparison Operators",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["comparison", "==", "!=", "<", ">"],
+  "description": "Compare values",
+  "code": "if(a == b){}\nif(a != b){}\nif(a < b){}\nif(a > b){}",
+  "explanation": "Used to compare values in conditions."
+}
+
+,
+{
+  "title": "For Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["for loop", "iteration", "loop"],
+  "description": "Basic for loop",
+  "code": "for(int i = 0; i < n; i++){\n    cout << i << endl;\n}",
+  "explanation": "Repeats code a fixed number of times."
+},
+{
+  "title": "While Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["while loop", "loop"],
+  "description": "Basic while loop",
+  "code": "while(n > 0){\n    n--;\n}",
+  "explanation": "Repeats while condition remains true."
+},
+{
+  "title": "Do While Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["do while", "loop"],
+  "description": "Execute loop at least once",
+  "code": "do{\n    n--;\n}while(n > 0);",
+  "explanation": "Runs the loop body at least one time."
+},
+{
+  "title": "Range Based For Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["range for", "foreach", "auto"],
+  "description": "Iterate through a container",
+  "code": "for(auto x : v){\n    cout << x << endl;\n}",
+  "explanation": "Traverses all elements of a container."
+},
+{
+  "title": "Break Statement",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["break", "exit loop"],
+  "description": "Exit loop immediately",
+  "code": "break;",
+  "explanation": "Terminates the nearest loop or switch."
+},
+{
+  "title": "Continue Statement",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["continue", "skip iteration"],
+  "description": "Skip current iteration",
+  "code": "continue;",
+  "explanation": "Skips the rest of the current iteration."
+},
+{
+  "title": "Nested Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["nested loop", "loop inside loop"],
+  "description": "Loop inside another loop",
+  "code": "for(int i = 0; i < n; i++){\n    for(int j = 0; j < m; j++){\n        cout << i << ' ' << j << endl;\n    }\n}",
+  "explanation": "Used for matrices and grid problems."
+},
+{
+  "title": "Infinite Loop",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["infinite loop", "endless loop"],
+  "description": "Loop forever",
+  "code": "while(true){\n    // code\n}",
+  "explanation": "Runs continuously until manually stopped."
+},
+{
+  "title": "Increment Operator",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["increment", "++"],
+  "description": "Increase value by one",
+  "code": "int x = 5;\nx++;",
+  "explanation": "Adds one to the variable."
+},
+{
+  "title": "Decrement Operator",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["decrement", "--"],
+  "description": "Decrease value by one",
+  "code": "int x = 5;\nx--;",
+  "explanation": "Subtracts one from the variable."
+}
+
+,
+{
+  "title": "Function Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["function declaration", "prototype", "function prototype"],
+  "description": "Declare a function before definition",
+  "code": "int add(int a, int b);",
+  "explanation": "Tells the compiler about the function before its implementation."
+},
+{
+  "title": "Function Definition",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["function definition", "function implementation"],
+  "description": "Define a function",
+  "code": "int add(int a, int b){\n    return a + b;\n}",
+  "explanation": "Contains the actual implementation of the function."
+},
+{
+  "title": "Void Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["void function", "no return"],
+  "description": "Function that returns nothing",
+  "code": "void greet(){\n    cout << \"Hello\";\n}",
+  "explanation": "Used when no value needs to be returned."
+},
+{
+  "title": "Function Returning Int",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["return int", "integer function"],
+  "description": "Function returning an integer",
+  "code": "int square(int x){\n    return x * x;\n}",
+  "explanation": "Returns an integer value."
+},
+{
+  "title": "Pass By Value",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["pass by value", "copy parameter"],
+  "description": "Arguments are copied",
+  "code": "void update(int x){\n    x = 100;\n}",
+  "explanation": "Changes inside the function do not affect the original variable."
+},
+{
+  "title": "Pass By Reference",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["pass by reference", "reference parameter"],
+  "description": "Modify original variable",
+  "code": "void update(int &x){\n    x = 100;\n}",
+  "explanation": "Changes affect the original variable."
+},
+{
+  "title": "Default Arguments",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["default arguments", "optional parameter"],
+  "description": "Function parameters with default values",
+  "code": "void greet(string name = \"Guest\"){\n    cout << name;\n}",
+  "explanation": "Allows arguments to be omitted."
+},
+{
+  "title": "Function Overloading",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["function overloading", "same function name"],
+  "description": "Multiple functions with same name",
+  "code": "int add(int a, int b){ return a + b; }\ndouble add(double a, double b){ return a + b; }",
+  "explanation": "Functions can have the same name with different parameters."
+},
+{
+  "title": "Inline Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["inline function", "inline"],
+  "description": "Suggest compiler to inline function",
+  "code": "inline int square(int x){\n    return x * x;\n}",
+  "explanation": "May reduce function call overhead."
+},
+{
+  "title": "Lambda Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["lambda", "anonymous function", "cpp lambda"],
+  "description": "Anonymous function object",
+  "code": "auto add = [](int a, int b){\n    return a + b;\n};",
+  "explanation": "Useful for short functions and STL algorithms."
+}
+
+
+,
+{
+  "title": "Array Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["array declaration", "array", "1d array"],
+  "description": "Declare an array",
+  "code": "int arr[5];",
+  "explanation": "Creates an array capable of storing 5 integers."
+},
+{
+  "title": "Array Initialization",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["array initialization", "initialize array"],
+  "description": "Initialize an array with values",
+  "code": "int arr[] = {1, 2, 3, 4, 5};",
+  "explanation": "Creates and initializes an array."
+},
+{
+  "title": "Array Input",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["array input", "read array"],
+  "description": "Take array input",
+  "code": "for(int i = 0; i < n; i++){\n    cin >> arr[i];\n}",
+  "explanation": "Reads array elements from input."
+},
+{
+  "title": "Array Traversal",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["array traversal", "iterate array"],
+  "description": "Traverse an array",
+  "code": "for(int i = 0; i < n; i++){\n    cout << arr[i] << ' ';\n}",
+  "explanation": "Visits each element of the array."
+},
+{
+  "title": "Two Dimensional Array",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["2d array", "matrix"],
+  "description": "Declare a 2D array",
+  "code": "int mat[3][3];",
+  "explanation": "Creates a matrix with rows and columns."
+},
+{
+  "title": "Two Dimensional Array Input",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["2d array input", "matrix input"],
+  "description": "Take matrix input",
+  "code": "for(int i = 0; i < n; i++){\n    for(int j = 0; j < m; j++){\n        cin >> mat[i][j];\n    }\n}",
+  "explanation": "Reads all elements of a matrix."
+},
+{
+  "title": "Pointer Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["pointer", "pointer declaration"],
+  "description": "Declare a pointer",
+  "code": "int x = 10;\nint *ptr = &x;",
+  "explanation": "Stores the address of a variable."
+},
+{
+  "title": "Pointer Dereference",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["dereference", "pointer value"],
+  "description": "Access value through pointer",
+  "code": "cout << *ptr;",
+  "explanation": "Retrieves the value stored at the pointed address."
+},
+{
+  "title": "Reference Variable",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["reference", "alias variable"],
+  "description": "Create a reference variable",
+  "code": "int x = 10;\nint &ref = x;",
+  "explanation": "Creates an alias for an existing variable."
+},
+{
+  "title": "Dynamic Memory Allocation",
+  "type": "code",
+  "language": "cpp",
+  "category": "basics",
+  "difficulty": "beginner",
+  "tags": ["new", "delete", "dynamic memory"],
+  "description": "Allocate memory dynamically",
+  "code": "int *ptr = new int(10);\n\ndelete ptr;",
+  "explanation": "Allocates memory at runtime and releases it manually."
+}
 ]

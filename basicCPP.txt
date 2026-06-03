@@ -1,0 +1,56 @@
+Added snippets of these topics:
+
+1. Hello World
+2. Integer Variable
+3. Double Variable
+4. Float Variable
+5. Character Variable
+6. Boolean Variable
+7. String Declaration
+8. Const Variable
+9. Input Integer
+10. Multiple Input
+
+11. Getline Input
+12. Output Variable
+13. Formatted Output
+14. If Statement
+15. If Else Statement
+16. Else If Ladder
+17. Nested If
+18. Switch Case
+19. Ternary Operator
+20. Comparison Operators
+
+21. For Loop
+22. While Loop
+23. Do While Loop
+24. Range Based For Loop
+25. Break Statement
+26. Continue Statement
+27. Nested Loop
+28. Infinite Loop
+29. Increment Operator
+30. Decrement Operator
+
+31. Function Declaration
+32. Function Definition
+33. Void Function
+34. Function Returning Int
+35. Pass By Value
+36. Pass By Reference
+37. Default Arguments
+38. Function Overloading
+39. Inline Function
+40. Lambda Function
+
+41. Array Declaration
+42. Array Initialization
+43. Array Input
+44. Array Traversal
+45. Two Dimensional Array
+46. Two Dimensional Array Input
+47. Pointer Declaration
+48. Pointer Dereference
+49. Reference Variable
+50. Dynamic Memory Allocation
