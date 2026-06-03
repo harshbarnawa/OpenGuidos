@@ -1,0 +1,562 @@
+[
+{
+  "title": "Git Init",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git init", "initialize repository"],
+  "description": "Initialize a new Git repository",
+  "code": "git init",
+  "explanation": "Creates a new local Git repository."
+},
+{
+  "title": "Git Clone",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git clone", "clone repository"],
+  "description": "Clone a remote repository",
+  "code": "git clone <repository-url>",
+  "explanation": "Downloads a copy of a remote repository."
+},
+{
+  "title": "Git Status",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git status", "repository status"],
+  "description": "Check repository status",
+  "code": "git status",
+  "explanation": "Shows modified, staged and untracked files."
+},
+{
+  "title": "Git Add File",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git add", "stage file"],
+  "description": "Stage a file",
+  "code": "git add file.txt",
+  "explanation": "Adds a file to staging area."
+},
+{
+  "title": "Git Add All",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git add all", "stage all files"],
+  "description": "Stage all files",
+  "code": "git add .",
+  "explanation": "Stages all modified and new files."
+},
+{
+  "title": "Git Commit",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git commit", "commit changes"],
+  "description": "Create a commit",
+  "code": "git commit",
+  "explanation": "Creates a snapshot of staged changes."
+},
+{
+  "title": "Git Commit With Message",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git commit message", "commit"],
+  "description": "Commit with a message",
+  "code": "git commit -m \"Initial commit\"",
+  "explanation": "Creates a commit with a descriptive message."
+},
+{
+  "title": "Git Log",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git log", "commit history"],
+  "description": "View commit history",
+  "code": "git log",
+  "explanation": "Displays detailed commit history."
+},
+{
+  "title": "Git Log One Line",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git log oneline", "history"],
+  "description": "Compact commit history",
+  "code": "git log --oneline",
+  "explanation": "Shows commits in a concise format."
+},
+{
+  "title": "Git Diff",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git diff", "changes"],
+  "description": "Show file differences",
+  "code": "git diff",
+  "explanation": "Displays unstaged changes."
+}
+
+,
+{
+  "title": "Git Branch List",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git branch", "list branches"],
+  "description": "List all local branches",
+  "code": "git branch",
+  "explanation": "Displays all local branches."
+},
+{
+  "title": "Git Create Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["create branch", "new branch"],
+  "description": "Create a new branch",
+  "code": "git branch feature-login",
+  "explanation": "Creates a new branch without switching to it."
+},
+{
+  "title": "Git Checkout Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["checkout branch", "switch branch"],
+  "description": "Switch to another branch",
+  "code": "git checkout feature-login",
+  "explanation": "Moves HEAD to the specified branch."
+},
+{
+  "title": "Git Switch Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git switch", "change branch"],
+  "description": "Switch branches using modern command",
+  "code": "git switch feature-login",
+  "explanation": "Recommended alternative to checkout."
+},
+{
+  "title": "Git Create And Switch Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["new branch", "checkout -b"],
+  "description": "Create and switch branch",
+  "code": "git checkout -b feature-login",
+  "explanation": "Creates and immediately switches to the new branch."
+},
+{
+  "title": "Git Merge Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git merge", "merge branch"],
+  "description": "Merge another branch",
+  "code": "git merge feature-login",
+  "explanation": "Combines changes from another branch."
+},
+{
+  "title": "Git Pull",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git pull", "update repository"],
+  "description": "Fetch and merge remote changes",
+  "code": "git pull origin main",
+  "explanation": "Downloads and merges latest changes."
+},
+{
+  "title": "Git Push",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git push", "upload changes"],
+  "description": "Push commits to remote repository",
+  "code": "git push origin main",
+  "explanation": "Uploads local commits to remote."
+},
+{
+  "title": "Git Fetch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git fetch", "download changes"],
+  "description": "Download remote updates",
+  "code": "git fetch",
+  "explanation": "Downloads changes without merging."
+},
+{
+  "title": "Git Remote List",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git remote", "remote list"],
+  "description": "List configured remotes",
+  "code": "git remote -v",
+  "explanation": "Shows remote repository URLs."
+}
+
+,
+{
+  "title": "Git Restore File",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git restore", "discard changes"],
+  "description": "Discard changes in a file",
+  "code": "git restore file.txt",
+  "explanation": "Restores file to last committed state."
+},
+{
+  "title": "Git Restore Staged",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["unstage file", "restore staged"],
+  "description": "Remove file from staging area",
+  "code": "git restore --staged file.txt",
+  "explanation": "Unstages a file while keeping changes."
+},
+{
+  "title": "Git Reset Soft",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git reset soft", "undo commit"],
+  "description": "Undo commit but keep staged changes",
+  "code": "git reset --soft HEAD~1",
+  "explanation": "Moves HEAD back while preserving staged files."
+},
+{
+  "title": "Git Reset Mixed",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git reset mixed", "unstage changes"],
+  "description": "Undo commit and unstage changes",
+  "code": "git reset --mixed HEAD~1",
+  "explanation": "Keeps changes in working directory."
+},
+{
+  "title": "Git Reset Hard",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git reset hard", "delete changes"],
+  "description": "Discard commits and changes",
+  "code": "git reset --hard HEAD~1",
+  "explanation": "Removes commits and local changes permanently."
+},
+{
+  "title": "Git Revert Commit",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git revert", "undo commit safely"],
+  "description": "Create a reverse commit",
+  "code": "git revert <commit-hash>",
+  "explanation": "Safely undoes a commit without rewriting history."
+},
+{
+  "title": "Git Remove File",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git rm", "remove file"],
+  "description": "Delete file from repository",
+  "code": "git rm file.txt",
+  "explanation": "Removes file and stages deletion."
+},
+{
+  "title": "Git Move File",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git mv", "rename file"],
+  "description": "Move or rename file",
+  "code": "git mv old.txt new.txt",
+  "explanation": "Renames or moves file while tracking history."
+},
+{
+  "title": "Git Tag Create",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git tag", "version tag"],
+  "description": "Create a version tag",
+  "code": "git tag v1.0.0",
+  "explanation": "Marks a specific commit with a tag."
+},
+{
+  "title": "Git Tag List",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git tag list", "show tags"],
+  "description": "List all tags",
+  "code": "git tag",
+  "explanation": "Displays all tags in repository."
+}
+
+,
+{
+  "title": "Git Config Username",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git config", "username"],
+  "description": "Set global Git username",
+  "code": "git config --global user.name \"Your Name\"",
+  "explanation": "Sets the username used in commits."
+},
+{
+  "title": "Git Config Email",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git config", "email"],
+  "description": "Set global Git email",
+  "code": "git config --global user.email \"you@example.com\"",
+  "explanation": "Sets the email used in commits."
+},
+{
+  "title": "Git Config List",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git config list", "show config"],
+  "description": "Display Git configuration",
+  "code": "git config --list",
+  "explanation": "Shows all Git configuration values."
+},
+{
+  "title": "Git Ignore File",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["gitignore", "ignore files"],
+  "description": "Ignore files from tracking",
+  "code": "echo node_modules/ >> .gitignore",
+  "explanation": "Prevents Git from tracking specified files."
+},
+{
+  "title": "Git Branch Delete",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["delete branch", "remove branch"],
+  "description": "Delete a local branch",
+  "code": "git branch -d feature-login",
+  "explanation": "Deletes a merged local branch."
+},
+{
+  "title": "Git Branch Rename",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["rename branch", "branch move"],
+  "description": "Rename current branch",
+  "code": "git branch -m new-branch-name",
+  "explanation": "Changes the branch name."
+},
+{
+  "title": "Git Push New Branch",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["push branch", "upstream branch"],
+  "description": "Push new branch to remote",
+  "code": "git push -u origin feature-login",
+  "explanation": "Pushes branch and sets upstream tracking."
+},
+{
+  "title": "Git Pull Rebase",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["pull rebase", "git rebase"],
+  "description": "Pull changes using rebase",
+  "code": "git pull --rebase origin main",
+  "explanation": "Keeps commit history cleaner than merge."
+},
+{
+  "title": "Git Show Commit",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["show commit", "commit details"],
+  "description": "View commit details",
+  "code": "git show <commit-hash>",
+  "explanation": "Displays commit information and changes."
+},
+{
+  "title": "Git Short Status",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["short status", "git status short"],
+  "description": "Compact repository status",
+  "code": "git status -s",
+  "explanation": "Shows a concise version of repository status."
+}
+
+,
+{
+  "title": "Git Clean",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git clean", "remove untracked files"],
+  "description": "Remove untracked files",
+  "code": "git clean -f",
+  "explanation": "Deletes untracked files from working directory."
+},
+{
+  "title": "Git Clean Directories",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git clean directories", "remove folders"],
+  "description": "Remove untracked directories",
+  "code": "git clean -fd",
+  "explanation": "Deletes untracked files and directories."
+},
+{
+  "title": "Git Clean Dry Run",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git clean dry run", "preview clean"],
+  "description": "Preview files to be removed",
+  "code": "git clean -n",
+  "explanation": "Shows what would be deleted without deleting."
+},
+{
+  "title": "Git Blame",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git blame", "line history"],
+  "description": "Show who changed each line",
+  "code": "git blame file.cpp",
+  "explanation": "Displays author and commit information for each line."
+},
+{
+  "title": "Git Cherry Pick",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git cherry pick", "copy commit"],
+  "description": "Apply specific commit",
+  "code": "git cherry-pick <commit-hash>",
+  "explanation": "Applies a specific commit onto current branch."
+},
+{
+  "title": "Git Reflog",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git reflog", "recover commits"],
+  "description": "Show HEAD history",
+  "code": "git reflog",
+  "explanation": "Tracks branch and HEAD movements."
+},
+{
+  "title": "Git Archive",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "intermediate",
+  "tags": ["git archive", "export project"],
+  "description": "Create project archive",
+  "code": "git archive --format=zip HEAD -o project.zip",
+  "explanation": "Exports repository contents without Git metadata."
+},
+{
+  "title": "Git Push Tags",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git push tags", "upload tags"],
+  "description": "Push all tags to remote",
+  "code": "git push --tags",
+  "explanation": "Uploads all local tags."
+},
+{
+  "title": "Git Show Branches",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["show branches", "all branches"],
+  "description": "List local and remote branches",
+  "code": "git branch -a",
+  "explanation": "Displays all branches including remotes."
+},
+{
+  "title": "Git Remote Add",
+  "type": "command",
+  "language": "git",
+  "category": "basic",
+  "difficulty": "beginner",
+  "tags": ["git remote add", "add remote"],
+  "description": "Add remote repository",
+  "code": "git remote add origin <repository-url>",
+  "explanation": "Connects local repository to a remote repository."
+}
+
+
+]
