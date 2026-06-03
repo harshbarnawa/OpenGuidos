@@ -1,0 +1,563 @@
+[
+{
+  "title": "Class Declaration",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["class", "class declaration"],
+  "description": "Declare a class",
+  "code": "class Student {\n};",
+  "explanation": "A class is a user-defined data type."
+},
+{
+  "title": "Object Creation",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["object", "create object"],
+  "description": "Create an object of a class",
+  "code": "Student s1;",
+  "explanation": "An object is an instance of a class."
+},
+{
+  "title": "Public Members",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["public", "access specifier"],
+  "description": "Public data members",
+  "code": "class Student {\npublic:\n    int age;\n};",
+  "explanation": "Public members can be accessed from outside the class."
+},
+{
+  "title": "Private Members",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["private", "access specifier"],
+  "description": "Private data members",
+  "code": "class Student {\nprivate:\n    int age;\n};",
+  "explanation": "Private members can only be accessed within the class."
+},
+{
+  "title": "Protected Members",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["protected", "inheritance"],
+  "description": "Protected data members",
+  "code": "class Student {\nprotected:\n    int age;\n};",
+  "explanation": "Protected members are accessible in derived classes."
+},
+{
+  "title": "Default Constructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["constructor", "default constructor"],
+  "description": "Default constructor",
+  "code": "class Student {\npublic:\n    Student() {\n        cout << \"Constructor Called\";\n    }\n};",
+  "explanation": "Called automatically when object is created."
+},
+{
+  "title": "Parameterized Constructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["parameterized constructor"],
+  "description": "Constructor with parameters",
+  "code": "class Student {\npublic:\n    Student(int age) {\n        this->age = age;\n    }\nprivate:\n    int age;\n};",
+  "explanation": "Used to initialize object with values."
+},
+{
+  "title": "Copy Constructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["copy constructor", "deep copy"],
+  "description": "Copy constructor",
+  "code": "class Student {\npublic:\n    Student(const Student &obj) {\n        age = obj.age;\n    }\nprivate:\n    int age;\n};",
+  "explanation": "Creates a new object as a copy of another object."
+},
+{
+  "title": "Destructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["destructor", "cleanup"],
+  "description": "Destructor",
+  "code": "class Student {\npublic:\n    ~Student() {\n        cout << \"Destructor Called\";\n    }\n};",
+  "explanation": "Automatically called when object is destroyed."
+},
+{
+  "title": "This Pointer",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["this pointer", "this keyword"],
+  "description": "Use this pointer",
+  "code": "class Student {\npublic:\n    void setAge(int age) {\n        this->age = age;\n    }\nprivate:\n    int age;\n};",
+  "explanation": "Refers to the current object."
+}
+
+,
+{
+  "title": "Getter Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["getter", "get function"],
+  "description": "Access private data member",
+  "code": "class Student {\nprivate:\n    int age;\npublic:\n    int getAge() {\n        return age;\n    }\n};",
+  "explanation": "Getter returns the value of a private member."
+},
+{
+  "title": "Setter Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["setter", "set function"],
+  "description": "Modify private data member",
+  "code": "class Student {\nprivate:\n    int age;\npublic:\n    void setAge(int a) {\n        age = a;\n    }\n};",
+  "explanation": "Setter updates the value of a private member."
+},
+{
+  "title": "Encapsulation",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["encapsulation", "data hiding"],
+  "description": "Hide data using private members",
+  "code": "class Student {\nprivate:\n    int age;\npublic:\n    void setAge(int a){ age = a; }\n    int getAge(){ return age; }\n};",
+  "explanation": "Encapsulation combines data and methods while restricting direct access."
+},
+{
+  "title": "Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["inheritance", "base class", "derived class"],
+  "description": "Basic inheritance",
+  "code": "class Animal {\npublic:\n    void eat(){}\n};\n\nclass Dog : public Animal {\n};",
+  "explanation": "Derived class inherits properties and methods of base class."
+},
+{
+  "title": "Single Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["single inheritance"],
+  "description": "One base class and one derived class",
+  "code": "class A {};\nclass B : public A {};",
+  "explanation": "A derived class inherits from one base class."
+},
+{
+  "title": "Multiple Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["multiple inheritance"],
+  "description": "Inherit from multiple base classes",
+  "code": "class A {};\nclass B {};\nclass C : public A, public B {};",
+  "explanation": "A class inherits from more than one base class."
+},
+{
+  "title": "Multilevel Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["multilevel inheritance"],
+  "description": "Inheritance chain",
+  "code": "class A {};\nclass B : public A {};\nclass C : public B {};",
+  "explanation": "A derived class becomes the base for another class."
+},
+{
+  "title": "Hierarchical Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["hierarchical inheritance"],
+  "description": "Multiple derived classes from one base class",
+  "code": "class A {};\nclass B : public A {};\nclass C : public A {};",
+  "explanation": "Several classes inherit from the same base class."
+},
+{
+  "title": "Hybrid Inheritance",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["hybrid inheritance"],
+  "description": "Combination of inheritance types",
+  "code": "class A {};\nclass B : public A {};\nclass C : public A {};\nclass D : public B, public C {};",
+  "explanation": "Combines multiple inheritance models."
+},
+{
+  "title": "Inheritance Constructor Call",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["base constructor", "derived constructor"],
+  "description": "Call base class constructor",
+  "code": "class A {\npublic:\n    A(int x){}\n};\n\nclass B : public A {\npublic:\n    B(int x) : A(x) {}\n};",
+  "explanation": "Base constructor can be called using initializer list."
+}
+
+,
+{
+  "title": "Method Overriding",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["method overriding", "override function"],
+  "description": "Derived class redefines base class method",
+  "code": "class Animal {\npublic:\n    void sound(){\n        cout << \"Animal Sound\";\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void sound(){\n        cout << \"Bark\";\n    }\n};",
+  "explanation": "Derived class provides its own implementation."
+},
+{
+  "title": "Virtual Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["virtual function", "runtime polymorphism"],
+  "description": "Enable runtime polymorphism",
+  "code": "class Animal {\npublic:\n    virtual void sound(){\n        cout << \"Animal\";\n    }\n};",
+  "explanation": "Allows method overriding to work through base pointers."
+},
+{
+  "title": "Pure Virtual Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["pure virtual", "abstract method"],
+  "description": "Pure virtual function",
+  "code": "class Animal {\npublic:\n    virtual void sound() = 0;\n};",
+  "explanation": "Forces derived classes to implement the function."
+},
+{
+  "title": "Abstract Class",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["abstract class", "pure virtual"],
+  "description": "Class containing pure virtual function",
+  "code": "class Animal {\npublic:\n    virtual void sound() = 0;\n};",
+  "explanation": "Objects of abstract classes cannot be created."
+},
+{
+  "title": "Runtime Polymorphism",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["runtime polymorphism", "virtual"],
+  "description": "Polymorphism using virtual functions",
+  "code": "Animal* a = new Dog();\na->sound();",
+  "explanation": "Function call resolved at runtime."
+},
+{
+  "title": "Compile Time Polymorphism",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["compile time polymorphism", "overloading"],
+  "description": "Polymorphism resolved during compilation",
+  "code": "int add(int a, int b);\ndouble add(double a, double b);",
+  "explanation": "Function overloading is compile-time polymorphism."
+},
+{
+  "title": "Function Overloading",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["function overloading"],
+  "description": "Same function name, different parameters",
+  "code": "void print(int x){}\nvoid print(string s){}",
+  "explanation": "Compiler chooses function based on arguments."
+},
+{
+  "title": "Operator Overloading",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["operator overloading"],
+  "description": "Overload operators for custom classes",
+  "code": "class Point {\npublic:\n    int x;\n    Point operator+(const Point &p){\n        return {x + p.x};\n    }\n};",
+  "explanation": "Provides custom behavior for operators."
+},
+{
+  "title": "Virtual Destructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["virtual destructor"],
+  "description": "Destructor for polymorphic classes",
+  "code": "class Base {\npublic:\n    virtual ~Base(){}\n};",
+  "explanation": "Ensures proper cleanup through base pointers."
+},
+{
+  "title": "Dynamic Binding",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["dynamic binding", "late binding"],
+  "description": "Method resolved at runtime",
+  "code": "Base* ptr = new Derived();\nptr->show();",
+  "explanation": "Actual function is determined during execution."
+}
+
+,
+{
+  "title": "Friend Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["friend function", "access private members"],
+  "description": "Friend function can access private members",
+  "code": "class Student {\nprivate:\n    int age = 20;\n    friend void show(Student s);\n};\n\nvoid show(Student s){\n    cout << s.age;\n}",
+  "explanation": "Friend functions can access private and protected members."
+},
+{
+  "title": "Friend Class",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["friend class"],
+  "description": "Grant access to another class",
+  "code": "class A {\nprivate:\n    int x = 10;\n    friend class B;\n};",
+  "explanation": "All members of the friend class can access private members."
+},
+{
+  "title": "Static Variable",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["static variable", "class variable"],
+  "description": "Shared variable among all objects",
+  "code": "class Student {\npublic:\n    static int count;\n};\n\nint Student::count = 0;",
+  "explanation": "Static variables belong to the class, not objects."
+},
+{
+  "title": "Static Function",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["static function", "static method"],
+  "description": "Class-level function",
+  "code": "class Student {\npublic:\n    static void show(){\n        cout << \"Hello\";\n    }\n};",
+  "explanation": "Can be called without creating an object."
+},
+{
+  "title": "Composition",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["composition", "has a relationship"],
+  "description": "Object contains another object",
+  "code": "class Engine {};\n\nclass Car {\n    Engine engine;\n};",
+  "explanation": "Strong ownership relationship."
+},
+{
+  "title": "Aggregation",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["aggregation", "has a relationship"],
+  "description": "Object references another object",
+  "code": "class Engine {};\n\nclass Car {\n    Engine* engine;\n};",
+  "explanation": "Weak ownership relationship."
+},
+{
+  "title": "Association",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["association", "relationship"],
+  "description": "Objects interact independently",
+  "code": "class Teacher {};\nclass Student {};",
+  "explanation": "Represents a general relationship between objects."
+},
+{
+  "title": "Nested Class",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "intermediate",
+  "tags": ["nested class", "inner class"],
+  "description": "Class inside another class",
+  "code": "class Outer {\npublic:\n    class Inner {\n    public:\n        void show(){}\n    };\n};",
+  "explanation": "Useful for logically grouping classes."
+},
+{
+  "title": "Object Array",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["object array", "array of objects"],
+  "description": "Create array of objects",
+  "code": "Student arr[10];",
+  "explanation": "Stores multiple objects in an array."
+},
+{
+  "title": "Object Pointer",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "beginner",
+  "tags": ["object pointer", "pointer to object"],
+  "description": "Pointer to object",
+  "code": "Student s;\nStudent* ptr = &s;",
+  "explanation": "Stores address of an object."
+}
+
+,
+{
+  "title": "Shallow Copy",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["shallow copy", "copy constructor"],
+  "description": "Copy object members directly",
+  "code": "class Student {\npublic:\n    int* age;\n\n    Student(int a){\n        age = new int(a);\n    }\n\n    Student(const Student& s){\n        age = s.age;\n    }\n};",
+  "explanation": "Copies memory address, not actual data."
+},
+{
+  "title": "Deep Copy",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["deep copy", "copy constructor"],
+  "description": "Create separate memory for copied object",
+  "code": "class Student {\npublic:\n    int* age;\n\n    Student(int a){\n        age = new int(a);\n    }\n\n    Student(const Student& s){\n        age = new int(*s.age);\n    }\n};",
+  "explanation": "Creates independent copies of dynamic memory."
+},
+{
+  "title": "Move Constructor",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["move constructor", "rvalue reference"],
+  "description": "Transfer ownership of resources",
+  "code": "class Student {\npublic:\n    Student(Student&& other) noexcept {\n        // move resources\n    }\n};",
+  "explanation": "Avoids expensive deep copies."
+},
+{
+  "title": "Move Assignment Operator",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["move assignment", "operator="],
+  "description": "Move resources using assignment",
+  "code": "Student& operator=(Student&& other) noexcept {\n    return *this;\n}",
+  "explanation": "Transfers ownership during assignment."
+},
+{
+  "title": "Unique Pointer",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["unique_ptr", "smart pointer"],
+  "description": "Exclusive ownership smart pointer",
+  "code": "unique_ptr<int> ptr = make_unique<int>(10);",
+  "explanation": "Only one owner can exist at a time."
+},
+{
+  "title": "Shared Pointer",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["shared_ptr", "smart pointer"],
+  "description": "Shared ownership smart pointer",
+  "code": "shared_ptr<int> ptr = make_shared<int>(10);",
+  "explanation": "Multiple pointers can own the same object."
+},
+{
+  "title": "Weak Pointer",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["weak_ptr", "smart pointer"],
+  "description": "Non-owning smart pointer",
+  "code": "weak_ptr<int> wp = sp;",
+  "explanation": "Prevents circular references with shared_ptr."
+},
+{
+  "title": "RAII Pattern",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["raii", "resource management"],
+  "description": "Resource Acquisition Is Initialization",
+  "code": "class File {\npublic:\n    File(){\n        // acquire resource\n    }\n    ~File(){\n        // release resource\n    }\n};",
+  "explanation": "Resources are tied to object lifetime."
+},
+{
+  "title": "Rule Of Three",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["rule of three", "copy constructor"],
+  "description": "Three special member functions",
+  "code": "~Student();\nStudent(const Student&);\nStudent& operator=(const Student&);",
+  "explanation": "If one is needed, usually all three are needed."
+},
+{
+  "title": "Rule Of Five",
+  "type": "code",
+  "language": "cpp",
+  "category": "oop",
+  "difficulty": "advanced",
+  "tags": ["rule of five", "move semantics"],
+  "description": "Five special member functions",
+  "code": "~Student();\nStudent(const Student&);\nStudent& operator=(const Student&);\nStudent(Student&&);\nStudent& operator=(Student&&);",
+  "explanation": "Extends Rule of Three with move operations."
+}
+
+
+
+]
