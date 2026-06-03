@@ -1,164 +1,159 @@
 # OpenGuido
 
-OpenGuido is a VS Code extension that helps developers quickly find programming syntax, code snippets, Git commands, and development commands without leaving the editor.
-
-Instead of opening a browser, searching Stack Overflow, or switching to ChatGPT for simple syntax lookups, developers can instantly search and access relevant snippets directly inside VS Code.
-
-## Problem
-
-Developers frequently forget:
-
-* Language syntax
-* STL functions
-* Git commands
-* Linux commands
-* Docker commands
-* Framework boilerplate code
-
-Searching for these repeatedly interrupts workflow and reduces productivity.
-
-OpenGuido aims to solve this by providing instant in-editor lookup.
+OpenGuido is a VS Code extension that helps developers quickly search programming syntax, code snippets, Linux commands, and Git commands directly inside Visual Studio Code.
 
 ---
 
-## Features Implemented
+## Features
 
-### Snippet Search
+* Instant snippet search
+* C++ syntax lookup
+* STL reference
+* OOP concepts
+* DSA templates
+* Algorithm templates
+* Git command lookup
+* Linux command lookup
+* Preview snippets
+* Copy to clipboard
+* Insert code directly into editor
 
-Search for programming snippets directly from VS Code.
+---
 
-Example:
+## Supported Categories
+
+### C++
+
+* Basics
+* STL
+* OOP
+* Data Structures
+* Algorithms
+
+### Git
+
+* Repository Management
+* Branching
+* Commits
+* Remote Operations
+
+### Linux
+
+* File System
+* Process Management
+* Networking
+* Permissions
+
+---
+
+## Installation
+
+### From VS Code Marketplace
+
+1. Open Visual Studio Code
+2. Go to Extensions (`Ctrl + Shift + X`)
+3. Search for **OpenGuido**
+4. Click **Install**
+5. Reload VS Code if prompted
+
+---
+
+## How To Use
+
+### Method 1: Command Palette
+
+1. Press `Ctrl + Shift + P`
+2. Type:
 
 ```text
-lowercase string
-sort vector
-descending sort
+OpenGuido: Search Snippet
 ```
 
----
+3. Press Enter
+4. Search for any syntax, command, or snippet
 
-### Quick Result Selection
-
-Matching snippets are displayed in a Quick Pick menu.
-
-Example:
+Examples:
 
 ```text
-Convert String To Lowercase
-Sort Vector Ascending
-Sort Vector Descending
+vector
+binary search
+git clone
+git push
+ping
+ssh
+chmod
 ```
 
 ---
 
-### Snippet Preview
+### Available Actions
 
-Preview snippet content before using it.
+For Code Snippets:
 
----
-
-### Copy To Clipboard
-
-Copy snippets instantly for use anywhere.
-
----
-
-### Insert Into Editor
-
-Insert selected snippets directly at the current cursor position.
-
----
-
-## Current Tech Stack
-
-* TypeScript
-* VS Code Extension API
-* esbuild
-* JSON-based snippet database
-
----
-
-## Current Project Structure
-
-```text
-src
-├── data
-│   └── cpp.json
-
-├── services
-│   └── searchService.ts
-
-├── types
-│   └── snippet.ts
-
-├── test
-
-└── extension.ts
-```
-
----
-
-## Example Snippet Format
-
-```json
-{
-  "title": "Convert String To Lowercase",
-  "type": "code",
-  "tags": [
-    "lowercase string",
-    "string lower",
-    "tolower"
-  ],
-  "description": "Convert complete string to lowercase",
-  "language": "cpp",
-  "code": "for(char &c : s){\n    c = tolower(c);\n}"
-}
-```
-
----
-
-## Future Roadmap
-
-### Phase 1 (Completed)
-
-* VS Code Extension Setup
-* Search Command
-* JSON Snippet Database
-* Search Service
-* Quick Pick Search Results
-
-### Phase 2 (In Progress)
-
-* Snippet Preview
+* Preview Snippet
 * Copy To Clipboard
 * Insert Into Editor
 
-### Phase 3
+For Commands:
 
-* Git Commands Database
-* Linux Commands Database
-* Docker Commands Database
-* React Snippets
-* Node.js Snippets
-
-### Phase 4
-
-* Dedicated Sidebar UI
-* Categories & Filters
-* Favorites
-
-### Phase 5
-
-* AI Powered Search
-* Semantic Search
-* Context Aware Suggestions
+* Preview Command
+* Copy To Clipboard
 
 ---
 
-## Vision
+## Example Searches
 
-OpenGuido aims to become a developer's instant knowledge companion inside VS Code, reducing context switching and helping developers stay focused while coding.
+```text
+vector sort
+unordered_map
+priority queue
+binary search
+dfs
+bfs
 
-No browser tabs.
-No searching.
-Just code.
+git clone
+git push
+git branch
+
+ping host
+ssh login
+chmod 755
+```
+
+---
+
+## Current Database
+
+* 500+ snippets and commands
+* C++
+* Git
+* Linux
+
+More languages and datasets will be added in future releases.
+
+Planned additions:
+
+* Java
+* Python
+* Docker
+* SQL
+* React
+* Node.js
+
+---
+
+## Version
+
+Current Version: 0.0.1
+
+---
+
+## Author
+
+Harsh Barnawa
+
+---
+
+## License
+
+MIT License
