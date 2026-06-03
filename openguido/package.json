@@ -1,12 +1,13 @@
 {
   "name": "openguido",
-  "displayName": "OpengGuido",
+  "displayName": "OpenGuido",
   "publisher": "HarshBarnawa",
   "description": "Instant syntax and command lookup for developers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.120.0"
   },
+  "icon": "icon.png",
   "categories": [
     "Programming Languages",
     "Other"
@@ -55,7 +56,7 @@
   
   "repository": {
     "type": "git",
-    "url": "https://github.com/harshbarnawa/OpenGuido"
+    "url": "https://github.com/harshbarnawa/OpenGuido.git"
   }
 ,
 "keywords": [
