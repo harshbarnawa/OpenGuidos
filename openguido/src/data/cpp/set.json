@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Set Declaration",
+    "description": "Declare ordered set container",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "declaration", "ordered set"],
+    "code": "set<int> st;"
+  },
+  {
+    "title": "Set Insert",
+    "description": "Insert element into set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "insert", "add element"],
+    "code": "st.insert(10);"
+  },
+  {
+    "title": "Set Erase",
+    "description": "Remove element from set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "erase", "delete element"],
+    "code": "st.erase(10);"
+  },
+  {
+    "title": "Set Find",
+    "description": "Find element in set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "find", "search element"],
+    "code": "auto it = st.find(10);"
+  },
+  {
+    "title": "Set Count",
+    "description": "Check if element exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "count", "exists"],
+    "code": "cout << st.count(10);"
+  },
+  {
+    "title": "Set Size",
+    "description": "Get number of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "size"],
+    "code": "cout << st.size();"
+  },
+  {
+    "title": "Set Empty",
+    "description": "Check if set is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "empty"],
+    "code": "cout << st.empty();"
+  },
+  {
+    "title": "Set Clear",
+    "description": "Remove all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "clear"],
+    "code": "st.clear();"
+  },
+  {
+    "title": "Set Begin Iterator",
+    "description": "Iterator to first element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "begin", "iterator"],
+    "code": "auto it = st.begin();"
+  },
+  {
+    "title": "Set End Iterator",
+    "description": "Iterator to end element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "end", "iterator"],
+    "code": "auto it = st.end();"
+  },
+  {
+    "title": "Set Reverse Begin",
+    "description": "Reverse iterator to last element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "rbegin", "reverse iterator"],
+    "code": "auto it = st.rbegin();"
+  },
+  {
+    "title": "Set Reverse End",
+    "description": "Reverse end iterator",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "rend", "reverse iterator"],
+    "code": "auto it = st.rend();"
+  },
+  {
+    "title": "Set Lower Bound",
+    "description": "First element not less than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "lower_bound", "binary search"],
+    "code": "auto it = st.lower_bound(x);"
+  },
+  {
+    "title": "Set Upper Bound",
+    "description": "First element greater than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "upper_bound", "binary search"],
+    "code": "auto it = st.upper_bound(x);"
+  },
+  {
+    "title": "Set Minimum Element",
+    "description": "Get smallest element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "minimum", "smallest element"],
+    "code": "cout << *st.begin();"
+  },
+  {
+    "title": "Set Maximum Element",
+    "description": "Get largest element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "maximum", "largest element"],
+    "code": "cout << *st.rbegin();"
+  },
+  {
+    "title": "Set Traverse",
+    "description": "Traverse all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "traverse", "iterate"],
+    "code": "for(auto x : st) cout << x << ' ';"
+  },
+  {
+    "title": "Set Element Exists",
+    "description": "Check existence using find",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "contains", "exists"],
+    "code": "if(st.find(x) != st.end()) {}"
+  },
+  {
+    "title": "Set Insert Range",
+    "description": "Insert range of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "insert range"],
+    "code": "st.insert(v.begin(), v.end());"
+  },
+  {
+    "title": "Set Unique Elements",
+    "description": "Get unique elements from vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["set", "unique", "remove duplicates"],
+    "code": "set<int> st(v.begin(), v.end());"
+  }
+]

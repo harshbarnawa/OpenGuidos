@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Unordered Set Declaration",
+    "description": "Declare unordered_set container",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "hash set", "declaration"],
+    "code": "unordered_set<int> ust;"
+  },
+  {
+    "title": "Unordered Set Insert",
+    "description": "Insert element into unordered_set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "insert", "add element"],
+    "code": "ust.insert(10);"
+  },
+  {
+    "title": "Unordered Set Erase",
+    "description": "Remove element from unordered_set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "erase", "delete element"],
+    "code": "ust.erase(10);"
+  },
+  {
+    "title": "Unordered Set Find",
+    "description": "Find element in unordered_set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "find", "search element"],
+    "code": "auto it = ust.find(10);"
+  },
+  {
+    "title": "Unordered Set Count",
+    "description": "Check if element exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "count", "exists"],
+    "code": "cout << ust.count(10);"
+  },
+  {
+    "title": "Unordered Set Size",
+    "description": "Get number of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "size"],
+    "code": "cout << ust.size();"
+  },
+  {
+    "title": "Unordered Set Empty",
+    "description": "Check if unordered_set is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "empty"],
+    "code": "cout << ust.empty();"
+  },
+  {
+    "title": "Unordered Set Clear",
+    "description": "Remove all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "clear"],
+    "code": "ust.clear();"
+  },
+  {
+    "title": "Unordered Set Begin Iterator",
+    "description": "Iterator to first element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "begin", "iterator"],
+    "code": "auto it = ust.begin();"
+  },
+  {
+    "title": "Unordered Set End Iterator",
+    "description": "Iterator to end",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "end", "iterator"],
+    "code": "auto it = ust.end();"
+  },
+  {
+    "title": "Unordered Set Traverse",
+    "description": "Traverse all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "traverse", "iterate"],
+    "code": "for(auto x : ust) cout << x << ' ';"
+  },
+  {
+    "title": "Unordered Set Reserve",
+    "description": "Reserve buckets for elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "reserve", "performance"],
+    "code": "ust.reserve(1000);"
+  },
+  {
+    "title": "Unordered Set Rehash",
+    "description": "Change bucket count",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "rehash"],
+    "code": "ust.rehash(100);"
+  },
+  {
+    "title": "Unordered Set Bucket Count",
+    "description": "Get number of buckets",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "bucket_count"],
+    "code": "cout << ust.bucket_count();"
+  },
+  {
+    "title": "Unordered Set Load Factor",
+    "description": "Get current load factor",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "load_factor"],
+    "code": "cout << ust.load_factor();"
+  },
+  {
+    "title": "Unordered Set Max Load Factor",
+    "description": "Get maximum load factor",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "max_load_factor"],
+    "code": "cout << ust.max_load_factor();"
+  },
+  {
+    "title": "Unordered Set Unique Elements",
+    "description": "Store unique elements from vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "unique", "remove duplicates"],
+    "code": "unordered_set<int> ust(v.begin(), v.end());"
+  },
+  {
+    "title": "Unordered Set String Declaration",
+    "description": "Store unique strings",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "string", "hash set"],
+    "code": "unordered_set<string> ust;"
+  },
+  {
+    "title": "Unordered Set Fast Lookup",
+    "description": "Average O(1) existence check",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "lookup", "contains"],
+    "code": "if(ust.find(x) != ust.end()) {}"
+  },
+  {
+    "title": "Unordered Set Frequency Presence",
+    "description": "Track seen elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_set", "visited", "seen"],
+    "code": "if(ust.count(x)) cout << \"Seen\";"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "title": "Vector Declaration",
+    "description": "Declare vector of integers",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "declaration", "vector int"],
+    "code": "vector<int> v;"
+  },
+  {
+    "title": "Vector Initialization",
+    "description": "Initialize vector with values",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "initialize", "vector values"],
+    "code": "vector<int> v = {1, 2, 3, 4, 5};"
+  },
+  {
+    "title": "Vector Size",
+    "description": "Get number of elements in vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "size", "vector size"],
+    "code": "cout << v.size();"
+  },
+  {
+    "title": "Vector Empty",
+    "description": "Check if vector is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "empty", "is empty"],
+    "code": "cout << v.empty();"
+  },
+  {
+    "title": "Vector Push Back",
+    "description": "Insert element at end",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "push_back", "insert end"],
+    "code": "v.push_back(10);"
+  },
+  {
+    "title": "Vector Pop Back",
+    "description": "Remove last element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "pop_back", "remove end"],
+    "code": "v.pop_back();"
+  },
+  {
+    "title": "Vector Front",
+    "description": "Access first element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "front", "first element"],
+    "code": "cout << v.front();"
+  },
+  {
+    "title": "Vector Back",
+    "description": "Access last element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "back", "last element"],
+    "code": "cout << v.back();"
+  },
+  {
+    "title": "Vector At",
+    "description": "Access element with bounds checking",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "at", "safe access"],
+    "code": "cout << v.at(2);"
+  },
+  {
+    "title": "Vector Clear",
+    "description": "Remove all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "clear", "empty vector"],
+    "code": "v.clear();"
+  },
+  {
+    "title": "Vector Resize",
+    "description": "Change vector size",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "resize", "change size"],
+    "code": "v.resize(10);"
+  },
+  {
+    "title": "Vector Reserve",
+    "description": "Reserve memory capacity",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "reserve", "memory optimization"],
+    "code": "v.reserve(100);"
+  },
+  {
+    "title": "Vector Capacity",
+    "description": "Get current capacity",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "capacity", "memory"],
+    "code": "cout << v.capacity();"
+  },
+  {
+    "title": "Vector Swap",
+    "description": "Swap two vectors",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "swap", "exchange vectors"],
+    "code": "v1.swap(v2);"
+  },
+  {
+    "title": "Vector Assign",
+    "description": "Assign values to vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "assign", "fill vector"],
+    "code": "v.assign(5, 10);"
+  }
+  ,
+  {
+    "title": "Vector Insert",
+    "description": "Insert element at specific position",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "insert", "add element", "insert position"],
+    "code": "v.insert(v.begin() + 2, 100);"
+  },
+  {
+    "title": "Vector Erase",
+    "description": "Remove element at specific position",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "erase", "delete element"],
+    "code": "v.erase(v.begin() + 2);"
+  },
+  {
+    "title": "Vector Erase Range",
+    "description": "Remove range of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "erase range", "remove range"],
+    "code": "v.erase(v.begin(), v.begin() + 3);"
+  },
+  {
+    "title": "Vector Begin Iterator",
+    "description": "Get iterator to first element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "begin", "iterator"],
+    "code": "auto it = v.begin();"
+  },
+  {
+    "title": "Vector End Iterator",
+    "description": "Get iterator to element after last",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "end", "iterator"],
+    "code": "auto it = v.end();"
+  },
+  {
+    "title": "Vector Reverse Begin",
+    "description": "Get reverse iterator to last element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "rbegin", "reverse iterator"],
+    "code": "auto it = v.rbegin();"
+  },
+  {
+    "title": "Vector Reverse End",
+    "description": "Get reverse end iterator",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "rend", "reverse iterator"],
+    "code": "auto it = v.rend();"
+  },
+  {
+    "title": "Vector Data",
+    "description": "Get pointer to underlying array",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "data", "array pointer"],
+    "code": "int* ptr = v.data();"
+  },
+  {
+    "title": "Vector Shrink To Fit",
+    "description": "Reduce capacity to fit size",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "shrink_to_fit", "memory"],
+    "code": "v.shrink_to_fit();"
+  },
+  {
+    "title": "Vector Max Size",
+    "description": "Get maximum possible vector size",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "max_size", "capacity"],
+    "code": "cout << v.max_size();"
+  },
+  {
+    "title": "Vector Input",
+    "description": "Take vector input from user",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "input", "read vector"],
+    "code": "for(int i = 0; i < n; i++) cin >> v[i];"
+  },
+  {
+    "title": "Vector Output",
+    "description": "Print vector elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "output", "print vector"],
+    "code": "for(int x : v) cout << x << ' ';"
+  },
+  {
+    "title": "Vector Sort Ascending",
+    "description": "Sort vector in ascending order",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "sort", "ascending sort"],
+    "code": "sort(v.begin(), v.end());"
+  },
+  {
+    "title": "Vector Sort Descending",
+    "description": "Sort vector in descending order",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "sort descending", "greater"],
+    "code": "sort(v.begin(), v.end(), greater<int>());"
+  },
+  {
+    "title": "Vector Reverse",
+    "description": "Reverse vector elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "reverse", "reverse vector"],
+    "code": "reverse(v.begin(), v.end());"
+  },
+  {
+    "title": "Vector Unique",
+    "description": "Remove consecutive duplicates",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "unique", "remove duplicates"],
+    "code": "v.erase(unique(v.begin(), v.end()), v.end());"
+  },
+  {
+    "title": "Vector Lower Bound",
+    "description": "Find first element not less than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "lower_bound", "binary search"],
+    "code": "auto it = lower_bound(v.begin(), v.end(), x);"
+  },
+  {
+    "title": "Vector Upper Bound",
+    "description": "Find first element greater than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "upper_bound", "binary search"],
+    "code": "auto it = upper_bound(v.begin(), v.end(), x);"
+  },
+  {
+    "title": "Vector Binary Search",
+    "description": "Check if element exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "binary_search", "search"],
+    "code": "bool found = binary_search(v.begin(), v.end(), x);"
+  },
+  {
+    "title": "Vector Accumulate Sum",
+    "description": "Calculate sum of vector elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "accumulate", "sum"],
+    "code": "int sum = accumulate(v.begin(), v.end(), 0);"
+  },
+  {
+    "title": "Vector Max Element",
+    "description": "Find maximum element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "max_element", "maximum"],
+    "code": "int mx = *max_element(v.begin(), v.end());"
+  },
+  {
+    "title": "Vector Min Element",
+    "description": "Find minimum element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "min_element", "minimum"],
+    "code": "int mn = *min_element(v.begin(), v.end());"
+  },
+  {
+    "title": "Vector Count Element",
+    "description": "Count occurrences of value",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "count", "frequency"],
+    "code": "int cnt = count(v.begin(), v.end(), x);"
+  },
+  {
+    "title": "Vector Find Element",
+    "description": "Find element in vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "find", "search element"],
+    "code": "auto it = find(v.begin(), v.end(), x);"
+  },
+  {
+    "title": "Vector Range Based Loop",
+    "description": "Iterate using range based loop",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "foreach", "range loop", "for each"],
+    "code": "for(auto x : v) cout << x << ' ';"
+  },
+  {
+    "title": "Vector Reference Loop",
+    "description": "Modify elements using reference loop",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "reference loop", "modify vector"],
+    "code": "for(auto &x : v) x *= 2;"
+  },
+  {
+    "title": "Vector Index Loop",
+    "description": "Traverse vector using index",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["vector", "for loop", "index traversal"],
+    "code": "for(int i = 0; i < v.size(); i++) cout << v[i];"
+  }
+]

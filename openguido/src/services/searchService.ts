@@ -4,6 +4,14 @@ import cppOop from '../data/cpp/oop.json';
 import cppDsa from '../data/cpp/dsa.json';
 import cppAlgorithms from '../data/cpp/algorithms.json';
 
+import cppString from '../data/cpp/string.json';
+import cppVector from '../data/cpp/vector.json';
+import cppMap from '../data/cpp/map.json';
+import cppSet from '../data/cpp/set.json';
+import cppUnorderedMap from '../data/cpp/unordered_map.json';
+import cppUnorderedSet from '../data/cpp/unordered_set.json';
+import cppPriorityQueue from '../data/cpp/priority_queue.json';
+
 import gitBasic from '../data/git/basic.json';
 
 import linuxFileSystem from '../data/linux/file-system.json';
@@ -19,6 +27,14 @@ const snippets: Snippet[] = [
     ...cppOop,
     ...cppDsa,
     ...cppAlgorithms,
+
+    ...cppString,
+    ...cppVector,
+    ...cppMap,
+    ...cppSet,
+    ...cppUnorderedMap,
+    ...cppUnorderedSet,
+    ...cppPriorityQueue,
 
     ...gitBasic,
 

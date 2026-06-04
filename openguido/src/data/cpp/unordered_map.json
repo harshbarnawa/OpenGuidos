@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Unordered Map Declaration",
+    "description": "Declare unordered_map container",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "hash map", "declaration"],
+    "code": "unordered_map<int, int> ump;"
+  },
+  {
+    "title": "Unordered Map Insert",
+    "description": "Insert key value pair",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "insert", "key value"],
+    "code": "ump.insert({1, 100});"
+  },
+  {
+    "title": "Unordered Map Bracket Insert",
+    "description": "Insert using operator[]",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "insert", "operator[]"],
+    "code": "ump[1] = 100;"
+  },
+  {
+    "title": "Unordered Map Access Value",
+    "description": "Access value by key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "access", "lookup"],
+    "code": "cout << ump[1];"
+  },
+  {
+    "title": "Unordered Map Size",
+    "description": "Get number of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "size"],
+    "code": "cout << ump.size();"
+  },
+  {
+    "title": "Unordered Map Empty",
+    "description": "Check if unordered_map is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "empty"],
+    "code": "cout << ump.empty();"
+  },
+  {
+    "title": "Unordered Map Erase",
+    "description": "Remove element by key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "erase", "delete key"],
+    "code": "ump.erase(1);"
+  },
+  {
+    "title": "Unordered Map Clear",
+    "description": "Remove all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "clear"],
+    "code": "ump.clear();"
+  },
+  {
+    "title": "Unordered Map Find",
+    "description": "Find key in unordered_map",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "find", "search key"],
+    "code": "auto it = ump.find(10);"
+  },
+  {
+    "title": "Unordered Map Count",
+    "description": "Check if key exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "count", "exists"],
+    "code": "cout << ump.count(10);"
+  },
+  {
+    "title": "Unordered Map Traverse",
+    "description": "Iterate through unordered_map",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "traverse", "iterate"],
+    "code": "for(auto &[key, value] : ump) cout << key << ' ' << value << '\\n';"
+  },
+  {
+    "title": "Unordered Map Frequency Count",
+    "description": "Count frequency using unordered_map",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "frequency", "hashing"],
+    "code": "for(int x : v) ump[x]++;"
+  },
+  {
+    "title": "Unordered Map Update Value",
+    "description": "Update value of existing key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "update", "modify"],
+    "code": "ump[key] += 5;"
+  },
+  {
+    "title": "Unordered Map Key Exists",
+    "description": "Check whether key exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "contains key", "exists"],
+    "code": "if(ump.find(x) != ump.end()) {}"
+  },
+  {
+    "title": "Unordered Map Bucket Count",
+    "description": "Get number of buckets",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "bucket_count", "hash table"],
+    "code": "cout << ump.bucket_count();"
+  },
+  {
+    "title": "Unordered Map Load Factor",
+    "description": "Get current load factor",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "load_factor"],
+    "code": "cout << ump.load_factor();"
+  },
+  {
+    "title": "Unordered Map Max Load Factor",
+    "description": "Get maximum load factor",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "max_load_factor"],
+    "code": "cout << ump.max_load_factor();"
+  },
+  {
+    "title": "Unordered Map Rehash",
+    "description": "Change bucket count",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "rehash"],
+    "code": "ump.rehash(100);"
+  },
+  {
+    "title": "Unordered Map Reserve",
+    "description": "Reserve buckets for elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "reserve"],
+    "code": "ump.reserve(1000);"
+  },
+  {
+    "title": "Unordered Map String Frequency",
+    "description": "Count string frequencies",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["unordered_map", "string frequency", "word count"],
+    "code": "unordered_map<string,int> freq;\nfreq[word]++;"
+  }
+]

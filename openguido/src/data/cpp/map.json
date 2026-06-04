@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Map Declaration",
+    "description": "Declare map container",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "declaration", "ordered map"],
+    "code": "map<int, int> mp;"
+  },
+  {
+    "title": "Map Insert",
+    "description": "Insert key value pair",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "insert", "key value"],
+    "code": "mp.insert({1, 100});"
+  },
+  {
+    "title": "Map Bracket Insert",
+    "description": "Insert using bracket operator",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "insert", "operator[]"],
+    "code": "mp[1] = 100;"
+  },
+  {
+    "title": "Map Access Value",
+    "description": "Access value using key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "access", "key lookup"],
+    "code": "cout << mp[1];"
+  },
+  {
+    "title": "Map Size",
+    "description": "Get number of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "size"],
+    "code": "cout << mp.size();"
+  },
+  {
+    "title": "Map Empty",
+    "description": "Check if map is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "empty"],
+    "code": "cout << mp.empty();"
+  },
+  {
+    "title": "Map Erase Key",
+    "description": "Remove element by key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "erase", "delete key"],
+    "code": "mp.erase(1);"
+  },
+  {
+    "title": "Map Clear",
+    "description": "Remove all elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "clear"],
+    "code": "mp.clear();"
+  },
+  {
+    "title": "Map Find",
+    "description": "Find key in map",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "find", "search key"],
+    "code": "auto it = mp.find(10);"
+  },
+  {
+    "title": "Map Count",
+    "description": "Check if key exists",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "count", "exists"],
+    "code": "cout << mp.count(10);"
+  },
+  {
+    "title": "Map Begin Iterator",
+    "description": "Iterator to first element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "begin", "iterator"],
+    "code": "auto it = mp.begin();"
+  },
+  {
+    "title": "Map End Iterator",
+    "description": "Iterator to end",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "end", "iterator"],
+    "code": "auto it = mp.end();"
+  },
+  {
+    "title": "Map Lower Bound",
+    "description": "First key not less than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "lower_bound"],
+    "code": "auto it = mp.lower_bound(5);"
+  },
+  {
+    "title": "Map Upper Bound",
+    "description": "First key greater than target",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "upper_bound"],
+    "code": "auto it = mp.upper_bound(5);"
+  },
+  {
+    "title": "Map Traverse",
+    "description": "Traverse map elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "traverse", "iterate map"],
+    "code": "for(auto &[key, value] : mp) cout << key << ' ' << value << '\\n';"
+  },
+  {
+    "title": "Map Frequency Count",
+    "description": "Count frequency using map",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "frequency", "count frequency"],
+    "code": "for(int x : v) mp[x]++;"
+  },
+  {
+    "title": "Map Maximum Key",
+    "description": "Get largest key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "max key", "largest key"],
+    "code": "cout << prev(mp.end())->first;"
+  },
+  {
+    "title": "Map Minimum Key",
+    "description": "Get smallest key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "min key", "smallest key"],
+    "code": "cout << mp.begin()->first;"
+  },
+  {
+    "title": "Map Key Exists",
+    "description": "Check existence of key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "contains key", "exists"],
+    "code": "if(mp.find(x) != mp.end()) {}"
+  },
+  {
+    "title": "Map Update Value",
+    "description": "Update value of existing key",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["map", "update", "modify value"],
+    "code": "mp[key] += 5;"
+  }
+]

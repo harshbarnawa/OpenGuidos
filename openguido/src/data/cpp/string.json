@@ -1,0 +1,364 @@
+[
+  {
+    "title": "String Length",
+    "description": "Get length of string using length()",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "length", "string length", "strlen alternative"],
+    "code": "string s = \"hello\";\ncout << s.length();"
+  },
+  {
+    "title": "String Size",
+    "description": "Get size of string using size()",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "size", "string size"],
+    "code": "string s = \"hello\";\ncout << s.size();"
+  },
+  {
+    "title": "String Substr",
+    "description": "Extract substring using substr()",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "substr", "substring", "extract string"],
+    "code": "string s = \"abcdef\";\ncout << s.substr(2, 3);"
+  },
+  {
+    "title": "String Find",
+    "description": "Find substring position",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "find", "search string", "substring search"],
+    "code": "string s = \"hello world\";\ncout << s.find(\"world\");"
+  },
+  {
+    "title": "String Replace",
+    "description": "Replace part of string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "replace", "modify string"],
+    "code": "string s = \"hello world\";\ns.replace(6, 5, \"cpp\");"
+  },
+  {
+    "title": "String Erase",
+    "description": "Erase characters from string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "erase", "delete string"],
+    "code": "string s = \"abcdef\";\ns.erase(2, 3);"
+  },
+  {
+    "title": "String Insert",
+    "description": "Insert substring into string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "insert", "add string"],
+    "code": "string s = \"hello\";\ns.insert(5, \" world\");"
+  },
+  {
+    "title": "String Append",
+    "description": "Append string using append()",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "append", "concatenate string"],
+    "code": "string s = \"hello\";\ns.append(\" world\");"
+  },
+  {
+    "title": "String Push Back",
+    "description": "Add character at end of string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "push_back", "add character"],
+    "code": "string s = \"abc\";\ns.push_back('d');"
+  },
+  {
+    "title": "String Pop Back",
+    "description": "Remove last character from string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "pop_back", "remove character"],
+    "code": "string s = \"abcd\";\ns.pop_back();"
+  },
+  {
+    "title": "String Front",
+    "description": "Access first character",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "front", "first character"],
+    "code": "string s = \"hello\";\ncout << s.front();"
+  },
+  {
+    "title": "String Back",
+    "description": "Access last character",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "back", "last character"],
+    "code": "string s = \"hello\";\ncout << s.back();"
+  },
+  {
+    "title": "String Empty",
+    "description": "Check if string is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "empty", "is empty"],
+    "code": "string s;\ncout << s.empty();"
+  },
+  {
+    "title": "String Clear",
+    "description": "Remove all characters",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "clear", "reset string"],
+    "code": "string s = \"hello\";\ns.clear();"
+  },
+  {
+    "title": "String Compare",
+    "description": "Compare two strings",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "compare", "string comparison"],
+    "code": "string a = \"abc\", b = \"abd\";\ncout << a.compare(b);"
+  }
+,
+ {
+    "title": "String Swap",
+    "description": "Swap contents of two strings",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "swap", "exchange strings"],
+    "code": "string a = \"hello\", b = \"world\";\na.swap(b);"
+  },
+  {
+    "title": "String Resize",
+    "description": "Resize string length",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "resize", "change size"],
+    "code": "string s = \"hello\";\ns.resize(10);"
+  },
+  {
+    "title": "String Capacity",
+    "description": "Get current string capacity",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "capacity", "memory allocation"],
+    "code": "string s = \"hello\";\ncout << s.capacity();"
+  },
+  {
+    "title": "String Reserve",
+    "description": "Reserve memory for string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "reserve", "memory optimization"],
+    "code": "string s;\ns.reserve(100);"
+  },
+  {
+    "title": "String Copy",
+    "description": "Copy characters to char array",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "copy", "char array"],
+    "code": "string s = \"hello\";\nchar arr[10];\ns.copy(arr, s.size());"
+  },
+  {
+    "title": "String Getline",
+    "description": "Read complete line including spaces",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "getline", "input string", "full line input"],
+    "code": "string s;\ngetline(cin, s);"
+  },
+  {
+    "title": "String Stoi",
+    "description": "Convert string to integer",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stoi", "string to int"],
+    "code": "string s = \"123\";\nint x = stoi(s);"
+  },
+  {
+    "title": "String Stol",
+    "description": "Convert string to long",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stol", "string to long"],
+    "code": "string s = \"123456\";\nlong x = stol(s);"
+  },
+  {
+    "title": "String Stoll",
+    "description": "Convert string to long long",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stoll", "string to long long"],
+    "code": "string s = \"123456789\";\nlong long x = stoll(s);"
+  },
+  {
+    "title": "String Stof",
+    "description": "Convert string to float",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stof", "string to float"],
+    "code": "string s = \"3.14\";\nfloat x = stof(s);"
+  },
+  {
+    "title": "String Stod",
+    "description": "Convert string to double",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stod", "string to double"],
+    "code": "string s = \"3.14159\";\ndouble x = stod(s);"
+  },
+  {
+    "title": "String To String",
+    "description": "Convert number to string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "to_string", "number to string"],
+    "code": "int x = 123;\nstring s = to_string(x);"
+  },
+  {
+    "title": "String To Lower",
+    "description": "Convert string to lowercase",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "tolower", "lowercase string", "convert lowercase"],
+    "code": "transform(s.begin(), s.end(), s.begin(), ::tolower);"
+  },
+  {
+    "title": "String To Upper",
+    "description": "Convert string to uppercase",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "toupper", "uppercase string", "convert uppercase"],
+    "code": "transform(s.begin(), s.end(), s.begin(), ::toupper);"
+  },
+  {
+    "title": "String Stringstream",
+    "description": "Use stringstream for parsing",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "stringstream", "parse string", "tokenization"],
+    "code": "stringstream ss(\"10 20\");\nint a, b;\nss >> a >> b;"
+  }
+  ,
+  {
+    "title": "Reverse String",
+    "description": "Reverse a string using STL reverse",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "reverse", "reverse string"],
+    "code": "string s = \"hello\";\nreverse(s.begin(), s.end());"
+  },
+  {
+    "title": "Sort String",
+    "description": "Sort characters of string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "sort", "sort string", "alphabetical order"],
+    "code": "string s = \"dcba\";\nsort(s.begin(), s.end());"
+  },
+  {
+    "title": "String Concatenation",
+    "description": "Join two strings",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "concatenate", "join string"],
+    "code": "string a = \"hello\";\nstring b = \"world\";\nstring c = a + b;"
+  },
+  {
+    "title": "String Character Count",
+    "description": "Count occurrences of character",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "count", "character frequency"],
+    "code": "string s = \"banana\";\ncout << count(s.begin(), s.end(), 'a');"
+  },
+  {
+    "title": "String Remove Spaces",
+    "description": "Remove all spaces from string",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "remove spaces", "trim spaces"],
+    "code": "s.erase(remove(s.begin(), s.end(), ' '), s.end());"
+  },
+  {
+    "title": "String Unique Characters",
+    "description": "Remove duplicate characters",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "unique", "remove duplicates"],
+    "code": "sort(s.begin(), s.end());\ns.erase(unique(s.begin(), s.end()), s.end());"
+  },
+  {
+    "title": "String Palindrome Check",
+    "description": "Check if string is palindrome",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "palindrome", "check palindrome"],
+    "code": "string t = s;\nreverse(t.begin(), t.end());\ncout << (s == t);"
+  },
+  {
+    "title": "String Anagram Check",
+    "description": "Check if two strings are anagrams",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "anagram", "compare strings"],
+    "code": "sort(a.begin(), a.end());\nsort(b.begin(), b.end());\ncout << (a == b);"
+  },
+  {
+    "title": "String Lexicographical Compare",
+    "description": "Compare strings lexicographically",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "lexicographical", "compare strings"],
+    "code": "cout << (a < b);"
+  },
+  {
+    "title": "String Find First Of",
+    "description": "Find first occurrence of any character",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "find_first_of"],
+    "code": "string s = \"abcdef\";\ncout << s.find_first_of(\"de\");"
+  },
+  {
+    "title": "String Find Last Of",
+    "description": "Find last occurrence of any character",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "find_last_of"],
+    "code": "string s = \"abcdefdef\";\ncout << s.find_last_of(\"de\");"
+  },
+  {
+    "title": "String Find First Not Of",
+    "description": "Find first character not matching set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "find_first_not_of"],
+    "code": "string s = \"aaaabc\";\ncout << s.find_first_not_of('a');"
+  },
+  {
+    "title": "String Find Last Not Of",
+    "description": "Find last character not matching set",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "find_last_not_of"],
+    "code": "string s = \"abcdddd\";\ncout << s.find_last_not_of('d');"
+  },
+  {
+    "title": "String Starts With",
+    "description": "Check string prefix (C++20)",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "starts_with", "prefix"],
+    "code": "string s = \"hello\";\ncout << s.starts_with(\"he\");"
+  },
+  {
+    "title": "String Ends With",
+    "description": "Check string suffix (C++20)",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["string", "ends_with", "suffix"],
+    "code": "string s = \"hello\";\ncout << s.ends_with(\"lo\");"
+  }
+]

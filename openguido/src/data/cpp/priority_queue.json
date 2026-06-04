@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Priority Queue Declaration",
+    "description": "Declare max heap priority queue",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "max heap", "declaration"],
+    "code": "priority_queue<int> pq;"
+  },
+  {
+    "title": "Priority Queue Min Heap",
+    "description": "Declare min heap priority queue",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "min heap", "greater"],
+    "code": "priority_queue<int, vector<int>, greater<int>> pq;"
+  },
+  {
+    "title": "Priority Queue Push",
+    "description": "Insert element into priority queue",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "push", "insert"],
+    "code": "pq.push(10);"
+  },
+  {
+    "title": "Priority Queue Pop",
+    "description": "Remove top element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "pop", "remove"],
+    "code": "pq.pop();"
+  },
+  {
+    "title": "Priority Queue Top",
+    "description": "Access top element",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "top", "peek"],
+    "code": "cout << pq.top();"
+  },
+  {
+    "title": "Priority Queue Size",
+    "description": "Get number of elements",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "size"],
+    "code": "cout << pq.size();"
+  },
+  {
+    "title": "Priority Queue Empty",
+    "description": "Check if priority queue is empty",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "empty"],
+    "code": "cout << pq.empty();"
+  },
+  {
+    "title": "Priority Queue Pair",
+    "description": "Priority queue of pairs",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "pair", "heap pair"],
+    "code": "priority_queue<pair<int,int>> pq;"
+  },
+  {
+    "title": "Priority Queue Min Heap Pair",
+    "description": "Min heap of pairs",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "pair", "min heap pair"],
+    "code": "priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;"
+  },
+  {
+    "title": "Priority Queue String",
+    "description": "Priority queue of strings",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "string heap"],
+    "code": "priority_queue<string> pq;"
+  },
+  {
+    "title": "Priority Queue Custom Comparator",
+    "description": "Custom comparator using struct",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "custom comparator", "compare"],
+    "code": "struct Compare {\n    bool operator()(int a, int b) {\n        return a > b;\n    }\n};\npriority_queue<int, vector<int>, Compare> pq;"
+  },
+  {
+    "title": "Priority Queue Build From Vector",
+    "description": "Initialize priority queue from vector",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "heapify", "vector"],
+    "code": "priority_queue<int> pq(v.begin(), v.end());"
+  },
+  {
+    "title": "Priority Queue Traverse Copy",
+    "description": "Traverse priority queue using copy",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "iterate", "traverse"],
+    "code": "auto temp = pq;\nwhile(!temp.empty()) {\n    cout << temp.top() << ' ';\n    temp.pop();\n}"
+  },
+  {
+    "title": "Priority Queue K Largest Elements",
+    "description": "Store k largest elements using min heap",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "k largest", "heap"],
+    "code": "priority_queue<int, vector<int>, greater<int>> pq;"
+  },
+  {
+    "title": "Priority Queue K Smallest Elements",
+    "description": "Store k smallest elements using max heap",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "k smallest", "heap"],
+    "code": "priority_queue<int> pq;"
+  },
+  {
+    "title": "Priority Queue Dijkstra Node",
+    "description": "Priority queue for Dijkstra algorithm",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "dijkstra", "graph"],
+    "code": "priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;"
+  },
+  {
+    "title": "Priority Queue Task Scheduling",
+    "description": "Store tasks by priority",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "task scheduling"],
+    "code": "priority_queue<pair<int,string>> pq;"
+  },
+  {
+    "title": "Priority Queue Absolute Value Comparator",
+    "description": "Custom heap based on absolute value",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "absolute value", "custom heap"],
+    "code": "auto cmp = [](int a, int b){ return abs(a) > abs(b); };\npriority_queue<int, vector<int>, decltype(cmp)> pq(cmp);"
+  },
+  {
+    "title": "Priority Queue Vector Pair",
+    "description": "Heap storing vector pairs",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "vector pair"],
+    "code": "priority_queue<vector<int>> pq;"
+  },
+  {
+    "title": "Priority Queue Frequency Sort",
+    "description": "Store frequency and value pairs",
+    "language": "cpp",
+    "type": "code",
+    "tags": ["priority queue", "frequency", "sorting"],
+    "code": "priority_queue<pair<int,int>> pq;\npq.push({freq, value});"
+  }
+]

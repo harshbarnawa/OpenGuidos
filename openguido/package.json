@@ -50,26 +50,23 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
   },
-  "dependencies": {
-    "fuse.js": "^7.4.0"
-  },
-  
   "repository": {
     "type": "git",
     "url": "https://github.com/harshbarnawa/OpenGuido.git"
+  },
+  "keywords": [
+    "cpp",
+    "c++",
+    "git",
+    "linux",
+    "snippets",
+    "syntax",
+    "developer",
+    "algorithms",
+    "dsa",
+    "programming"
+  ],
+  "dependencies": {
+    "fuse.js": "^6.6.2"
   }
-,
-"keywords": [
-  "cpp",
-  "c++",
-  "git",
-  "linux",
-  "snippets",
-  "syntax",
-  "developer",
-  "algorithms",
-  "dsa",
-  "programming"
-]
-  
 }
